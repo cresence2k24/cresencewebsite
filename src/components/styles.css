@@ -1,0 +1,66 @@
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.swiper {
+  width: 320px;
+  height: 320px;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: #610d83; */
+  /* border:2px solid #b936ee; */
+}
+
+
+/* .swipeCards{
+  height: 320px;
+  border-color: #610d83;
+} */
+
+@media screen and (min-width: 320px) {
+  .mySwiper1 {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mySwiper1 {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mySwiper1 {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mySwiper1 {
+    width: 900px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mySwiper1 {
+    width: 1200px;
+  }
+}  
