@@ -47,6 +47,9 @@
   box-shadow: 0px 4.42184px 120px black;
 }
 
+.background{
+  background-color: #610d83;
+}
 
 @layer base {
   body {

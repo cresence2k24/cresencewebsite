@@ -19,7 +19,8 @@ export default function EventSlider() {
   return (
     <div className='section'>
     <><div className='container flex flex-col jusify-center items-center gap-y-10 lg:gap-y-5'>
-    <motion.p variants={fadeIn('right', 0.01)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient max-w-sm'>Tech Events</motion.p>
+        <div className='lg:h-[35] flex flex-col justify-center items-center'>
+        <motion.p variants={fadeIn('left', 0.01)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient max-w-sm mb-8'>Tech Events</motion.p>
         <div className='lg:h-[35]'>
         <Swiper
           // slidesPerView={1.25}
@@ -47,7 +48,7 @@ export default function EventSlider() {
               },
             }}
           spaceBetween={30}
-          freemode={true}
+          freeMode={true}
           pagination={{
             clickable: true,
           }}
@@ -168,6 +169,7 @@ export default function EventSlider() {
               </div>
             </SwiperSlide>
         </Swiper>
+        </div>
         </div>
         <div className='lg:h-[35] flex flex-col justify-center items-center'>
         <motion.p variants={fadeIn('left', 0.01)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient max-w-sm mb-8'>Non-Tech Events</motion.p>
