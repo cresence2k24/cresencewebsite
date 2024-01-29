@@ -50,6 +50,7 @@ const About = () => {
                     <BsArrowUpRight />
                   </a>
                   {/* <a href='#' className='text-gradient text-sm'>{link}</a> */}
+
                 </div>
                 
               </div>
