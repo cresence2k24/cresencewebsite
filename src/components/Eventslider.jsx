@@ -2,6 +2,18 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Img2 from '../assets/img2.png';
+import codequest from '../assets/codequest.webp';
+import typesprint from '../assets/typesprint.webp';
+import cipher from "../assets/cipherchase.jpg";
+import logicleague from '../assets/logicleague.jpg';
+import captureflag from '../assets/captureflag.png';
+import hunt from '../assets/huntthehint.jpg';
+import moviemad from '../assets/moviemad.jpg';
+import ipl from '../assets/ipl.jpg';
+import beg from '../assets/beg.jpg';
+import quiz from '../assets/quiz.jpg';
+import freefire from '../assets/freefire.jpg';
+import bgmi from '../assets/bgmi.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -60,15 +72,15 @@ export default function EventSlider() {
           className="mySwiper1"
 
         >
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Type Sprint</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
+                <span className='text-2xl text-white'>1st March-timings..</span>
               </div>
               </div>
             </SwiperSlide>
@@ -107,13 +119,13 @@ export default function EventSlider() {
                 <span className='text-2xl text-white'>1st March</span>
               </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={typesprint} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Type Sprint</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -123,9 +135,21 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={codequest} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Code Quest</span>
+              </div>
+              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
+                <span className='text-2xl text-white'>1st March</span>
+              </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <div className='bg-black/40 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={logicleague} alt=''></img>
+              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient'>Logic League</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -135,9 +159,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={cipher} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Cipher Chase</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -146,22 +170,10 @@ export default function EventSlider() {
             </SwiperSlide>
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <div className='bg-black/40 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={captureflag} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Crypto-Venture</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -212,12 +224,13 @@ export default function EventSlider() {
           className="mySwiper1"
 
         >
+            
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px] lg:h-[250px]' src={hunt} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Hunt the Hint</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -226,34 +239,10 @@ export default function EventSlider() {
             </SwiperSlide>
             <SwiperSlide>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <div className='bg-black/20 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={quiz} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Ex-Quiz-Me!</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -263,9 +252,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={ipl} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>IPL Auction</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -275,9 +264,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={moviemad} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Movie Madness</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -287,9 +276,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px] lg:w-full' src={beg} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Get Grab Gather</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -299,9 +288,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={freefire} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>Free Fire</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
@@ -311,9 +300,9 @@ export default function EventSlider() {
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
+              <img className='scale-125 transition-all duration-500 h-[248px]' src={bgmi} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
+                <span className='text-gradient'>BGMI</span>
               </div>
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
