@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
+import { About } from './About';
 
 const Banner = () => {
   return (
@@ -39,7 +40,7 @@ const Banner = () => {
               Unleashing Talents.Unleash your inner Talents
             </motion.p>
             <motion.div variants={fadeIn('up', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <Link className='btn btn-lg cursor-pointer' to = "events" smooth = {true}>Go to Events</Link>
+              <Link className='btn btn-lg hover:-translate-y-1 hover:scale-110' to = 'events' smooth = {true}>Go to Events</Link>
               <Link className='text-gradient btn-link drop-shadow-xl cursor-pointer' to='about' smooth = {true}>About CreSencE</Link>
             </motion.div>
 

@@ -14,7 +14,7 @@ const Header = () => {
           <a href='#'>
             <img src={Logo} alt='' className='h-[76px]'></img>
           </a>
-          <Link className='btn btn-sm' to = "about" smooth= {true}>
+          <Link className='btn btn-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200' to = "about" smooth= {true}>
             Explore!
           </Link>
         </div>
