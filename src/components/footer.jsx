@@ -23,13 +23,13 @@ const Footer = () => {
               <p className='text-gray-300'> +91 6302218308</p>
               <p className='text-gray-300'>cresence@jntugvcev.edu.in</p>
               <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
+              <a href='https://www.youtube.com/@cresencecse' target='_blank_'>
                 <FaYoutube />
               </a>
               <a href='https://jntugv.edu.in/' target='_blank_'>
                 <FaLink />
               </a>
-              <a href='#'>
+              <a href='https://www.instagram.com/cresence_jntugv/?igsh=Z2h4OTd0YjdyczVq' target='_blank_'>
                 <FaInstagram />
               </a>
             </div>

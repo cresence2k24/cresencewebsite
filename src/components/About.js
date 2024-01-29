@@ -3,6 +3,7 @@ import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll';
 
 const aboutlst = [
   {
@@ -32,7 +33,7 @@ const About = () => {
           <motion.h2 variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='h2 text-accent mb-6'>About Constelle</motion.h2>
           <motion.h3 variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='h3 max-w-[455px] mb-16'>CreSencE?</motion.h3>
           <motion.p variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='max-w-[455px]'>Hola amigos …! We present you, the biggest college fest in Vizianagaram . CreSencE, with its inception in the year 2007. CreSencE is a Two-day National level Technical Symposium organized by department of Computer Science and Engineering of Jawaharlal Nehru Technological University Gurajada Vizianagaram, has a benchmark for excellence in organizing Technical and non-Technical Events on a breeze of Euphoria with a footfall of thousands.</motion.p>
-          <motion.button variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='btn btn-sm my-9'>Learn more</motion.button>
+          <a href='https://jntugv.edu.in/' target = '_blank_' className='btn btn-sm my-9' smooth = {true}>About College</a>
         </div>
         <div>
           <motion.div variants={fadeIn('right', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }}>
@@ -48,7 +49,7 @@ const About = () => {
                   <a href="#" className='btn w-9 h-9 mb-[35px] flex justify-center items-center'>
                     <BsArrowUpRight />
                   </a>
-                  <a href='#' className='text-gradient text-sm'>{link}</a>
+                  {/* <a href='#' className='text-gradient text-sm'>{link}</a> */}
                 </div>
                 
               </div>

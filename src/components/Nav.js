@@ -25,9 +25,9 @@ const Nav = () => {
           <Link activeClass="active" smooth = {true} spy = {true} to = "events" className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
             <MdOutlineEventAvailable />
           </Link>
-          <Link activeClass="active" smooth = {true} spy = {true} to = "timeline" className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+          {/* <Link activeClass="active" smooth = {true} spy = {true} to = "timeline" className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
             <IoTimerOutline />
-          </Link>
+          </Link> */}
           <Link activeClass="active" smooth = {true} spy = {true} to = "team" className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
             <RiTeamLine />
           </Link>

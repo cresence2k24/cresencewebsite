@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../assets/logo.png' ;
+import about from './About';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -12,9 +14,9 @@ const Header = () => {
           <a href='#'>
             <img src={Logo} alt='' className='h-[76px]'></img>
           </a>
-          <button className='btn btn-sm'>
+          <Link className='btn btn-sm' to = "about" smooth= {true}>
             Explore!
-          </button>
+          </Link>
         </div>
       </div>
     </header>

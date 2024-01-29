@@ -4,6 +4,7 @@ import Image from '../assets/avatar.png';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -38,8 +39,8 @@ const Banner = () => {
               Unleashing Talents.Unleash your inner Talents
             </motion.p>
             <motion.div variants={fadeIn('up', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Go to Events</button>
-              <a href='#' className='text-gradient btn-link drop-shadow-xl'>About CreSencE</a>
+              <Link className='btn btn-lg cursor-pointer' to = "events" smooth = {true}>Go to Events</Link>
+              <Link className='text-gradient btn-link drop-shadow-xl cursor-pointer' to='about' smooth = {true}>About CreSencE</Link>
             </motion.div>
 
 
