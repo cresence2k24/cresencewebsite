@@ -6,6 +6,7 @@ import { fadeIn } from '../variants'
 import Img1 from '../assets/team2.jpeg';
 import Img2 from '../assets/team1.jpeg';
 import Img4 from '../assets/team4.jpg';
+import Img5 from '../assets/team5.jpeg'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -201,7 +202,7 @@ export default function Team() {
               <SwiperSlide>
                 <div class="w-96 px-6 py-6  text-center bg-purple-900 rounded-lg lg:mt-0 xl:px-10">
     <div class="space-y-4 xl:space-y-6">
-        <img class="mx-auto rounded-full h-36 w-36" src={Img1} alt="author avatar" />
+        <img class="mx-auto rounded-full h-36 w-36" src={Img5} alt="author avatar" />
         <div class="space-y-2">
             <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                 <h3 class="text-white">Sesha Satya Sai</h3>
