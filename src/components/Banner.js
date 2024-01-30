@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
-import { About } from './About';
+// import { About } from './About';
 
 const Banner = () => {
   return (
