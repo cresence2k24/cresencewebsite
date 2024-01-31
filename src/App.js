@@ -13,6 +13,8 @@ import EventSlider from './components/Eventslider';
 
 // bg-site bg-no-repeat bg-cover overflow-hidden
 const App = () => {
+
+
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden flex flex-col justify-center lg:h-[full]'>
       <Header />

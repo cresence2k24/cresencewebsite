@@ -28,6 +28,22 @@ module.exports = {
         // about: "url('./assets/about.png')",
         // events: "url('./assets/events.png')",
       },
+      animation: {
+        'gradient': 'gradient 8s linear infinite',
+      },
+      keyframes: {
+        "gradient" :{
+          "0": {
+            backgroundPosition: "0% 50%"
+          },
+          '50' :{
+            backgroundPosition: "100% 50%"
+          },
+          '100': {
+            backgroundPosition: "0% 50%"
+          }
+        }
+      }
     },
   },
   plugins: [],

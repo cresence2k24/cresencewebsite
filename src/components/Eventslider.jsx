@@ -14,19 +14,25 @@ import beg from '../assets/beg.jpg';
 import quiz from '../assets/quiz.jpg';
 import freefire from '../assets/freefire.jpg';
 import bgmi from '../assets/bgmi.jpg';
+import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
+
+// import { Navigation } from "swiper";
+
 // import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 // import './eventstyles.css';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 
+// SwiperCore.use([MouseWheel,Pagination]);
 export default function EventSlider() {
   return (
     <div className='section'>
@@ -64,11 +70,17 @@ export default function EventSlider() {
           pagination={{
             clickable: true,
           }}
+          navigation={{
+            nextEl: '.swiper-buton-next',
+            prevEl: '.swiper-buton-prev',
+            clickable: true,
+          }}
+          mousewheel= {true}
           autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-          modules={[FreeMode, Pagination]}
+          modules={[FreeMode, Pagination ,Navigation]}
           className="mySwiper1"
 
         >
@@ -180,7 +192,16 @@ export default function EventSlider() {
               </div>
               </div>
             </SwiperSlide>
-        </Swiper>
+            </Swiper>
+            <div className="slider-controller hidden lg:flex lg:gap-x-10 lg:justify-center">
+              <div className="swiper-buton-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowLeftLong />
+              </div>
+              <div className="swiper-buton-next slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowRightLong />
+              </div>
+            </div>
+        
         </div>
         </div>
         <div className='lg:h-[35] flex flex-col justify-center items-center'>
@@ -220,7 +241,12 @@ export default function EventSlider() {
               delay: 2500,
               disableOnInteraction: false,
             }}
-          modules={[FreeMode, Pagination]}
+          navigation={{
+              nextEl: '.swiper-buton-n',
+              prevEl: '.swiper-buton-p',
+              clickable: true,
+            }}
+          modules={[FreeMode, Pagination ,Navigation]}
           className="mySwiper1"
 
         >
@@ -310,6 +336,14 @@ export default function EventSlider() {
               </div>
             </SwiperSlide>
         </Swiper>
+        <div className="slider-controller hidden lg:flex lg:gap-x-10 lg:justify-center">
+              <div className="swiper-buton-p slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowLeftLong />
+              </div>
+              <div className="swiper-buton-n slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowRightLong />
+              </div>
+        </div>
         </div>
         </div>
       </div>
