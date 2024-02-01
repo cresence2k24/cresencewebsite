@@ -10,6 +10,7 @@ import Img4 from '../assets/team4.jpg';
 import Img5 from '../assets/team5.jpeg';
 import Img6 from '../assets/team6.jpeg';
 import Img7 from '../assets/team7.jpeg';
+import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,7 +19,7 @@ import 'swiper/css/effect-cards';
 import './styles.css';
 
 // import required modules
-import { EffectCards } from 'swiper/modules';
+import { EffectCards ,Navigation } from 'swiper/modules';
 
 const teamlst = [];
 export default function Team() {
@@ -35,8 +36,13 @@ export default function Team() {
             <Swiper
               effect={'cards'}
               grabCursor={true}
-              modules={[EffectCards]}
+              modules={[EffectCards,Navigation]}
               className="mySwiper"
+              navigation={{
+                nextEl: '.swiper-b-next',
+                prevEl: '.swiper-b-prev',
+                clickable: true,
+              }}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -323,6 +329,15 @@ export default function Team() {
 </div>
               </SwiperSlide>
             </Swiper>
+            <div className="slider-controller hidden lg:pt-5 lg:flex lg:gap-x-10 lg:justify-center">
+              <div className="swiper-b-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowLeftLong />
+              </div>
+              <div className="swiper-b-next slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+              <FaArrowRightLong />
+              </div>
+            </div>
+        
           </div>
         </div>
       </>
