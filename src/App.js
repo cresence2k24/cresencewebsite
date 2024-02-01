@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
@@ -14,9 +14,17 @@ import EventSlider from './components/Eventslider';
 // bg-site bg-no-repeat bg-cover overflow-hidden
 const App = () => {
 
+  const [loading, setLoading] = useState(true);
+  const preloader = document.getElementById("preload");
+  if(preloader){
+    setTimeout(() => {
+      preloader.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
 
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden flex flex-col justify-center lg:h-[full]'>
+    !loading && (<div className='bg-site bg-no-repeat bg-cover overflow-hidden flex flex-col justify-center lg:h-[full]'>
       <Header />
       <Nav />
       <Banner />
@@ -28,6 +36,7 @@ const App = () => {
       {/* <Sponsors /> */}
       <Footer />
     </div>
+    )
   );
 };
 
