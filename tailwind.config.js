@@ -24,9 +24,7 @@ module.exports = {
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
-        // about: "url('./assets/about.png')",
-        // events: "url('./assets/events.png')",
+        site: "url('./assets/site-bg.webp')",
       },
       animation: {
         'gradient': 'gradient 8s linear infinite',

@@ -2,8 +2,8 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import Img1 from '../assets/drone.png'; 
-import Img2 from '../assets/img2.png';
+import Img1 from '../assets/drone.avif'; 
+import Img2 from '../assets/img2.avif';
 
 const Events = () => {
   return(

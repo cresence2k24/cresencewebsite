@@ -1,19 +1,19 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Img2 from '../assets/img2.png';
-import codequest from '../assets/codequest.webp';
+// import Img2 from '../assets/img2.png';
+import codequest from '../assets/codequest.avif';
 import typesprint from '../assets/typesprint.webp';
-import cipher from "../assets/cipherchase.jpg";
-import logicleague from '../assets/logicleague.jpg';
-import captureflag from '../assets/captureflag.png';
-import hunt from '../assets/huntthehint.jpg';
-import moviemad from '../assets/moviemad.jpg';
-import ipl from '../assets/ipl.jpg';
-import beg from '../assets/beg.jpg';
-import quiz from '../assets/quiz.jpg';
+import cipher from "../assets/cipherchase.avif";
+import logicleague from '../assets/logicleague.avif';
+import captureflag from '../assets/captureflag.avif';
+import hunt from '../assets/huntthehint.avif';
+import moviemad from '../assets/moviemad.avif';
+import ipl from '../assets/ipl.avif';
+import beg from '../assets/beg.avif';
+import quiz from '../assets/quiz.avif';
 import freefire from '../assets/freefire.jpg';
-import bgmi from '../assets/bgmi.jpg';
+import bgmi from '../assets/bgmi.avif';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 
 // Import Swiper styles
