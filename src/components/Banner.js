@@ -16,7 +16,7 @@ const Banner = () => {
             <img src={Image} alt='' />
           </motion.div>
           <div className='flex-1 text-center font-secondary lg:text-left'>
-            <motion.h1 variants={fadeIn('right', 0.1)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient animate-gradient text-[42px] font-bold leading-[0.8] lg:text-[80px] my-16 lg:my-5 drop-shadow-3xl'>
+            <motion.h1 variants={fadeIn('right', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient animate-gradient text-[46px] lg:text-[56px] font-bold leading-[0.8] lg:text-[80px] my-16 lg:my-5 drop-shadow-3xl'>
               CreSencE
             </motion.h1>
             <motion.div variants={fadeIn('left', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-[42px] lg:text-[40px] font-secondary font-semibold uppercase leading-[1]'>
