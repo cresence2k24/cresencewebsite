@@ -3,13 +3,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import Img1 from '../assets/team2.jpeg';
-import Img2 from '../assets/team1.jpeg';
-import Img3 from '../assets/team3.jpg';
-import Img4 from '../assets/team4.jpg';
-import Img5 from '../assets/team5.jpeg';
-import Img6 from '../assets/team6.jpeg';
-import Img7 from '../assets/team7.jpeg';
+import Img1 from '../assets/team2.webp';
+import Img2 from '../assets/team1.webp';
+import Img3 from '../assets/team3.webp';
+import Img4 from '../assets/team4.webp';
+import Img5 from '../assets/team5.webp';
+import Img6 from '../assets/team6.webp';
+import Img7 from '../assets/team7.webp';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 
 // Import Swiper styles

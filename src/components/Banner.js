@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/avatar.png';
+import Image from '../assets/avatar.webp';
 // import { FaWhatsapp, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
