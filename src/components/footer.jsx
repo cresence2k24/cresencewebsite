@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../assets/logo.svg'
+import Img from '../assets/logo.png'
 import { FaLink, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
