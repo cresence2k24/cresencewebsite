@@ -1,12 +1,12 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Img1 from '../assets/team2.webp';
-import Img2 from '../assets/team1.webp';
-import Img3 from '../assets/team3.webp';
-import Img4 from '../assets/team4.webp';
-import Img5 from '../assets/team5.webp';
-import Img6 from '../assets/team6.webp';
-import Img7 from '../assets/team7.webp';
+import Img1 from '../assets/Images/team2.webp';
+import Img2 from '../assets/Images/team1.webp';
+import Img3 from '../assets/Images/team3.webp';
+import Img4 from '../assets/Images/team4.webp';
+import Img5 from '../assets/Images/team5.webp';
+import Img6 from '../assets/Images/team6.webp';
+import Img7 from '../assets/Images/team7.webp';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 import {Reveal} from './Reveal';
 
