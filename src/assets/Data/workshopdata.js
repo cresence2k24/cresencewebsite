@@ -5,8 +5,7 @@ const dataWorkshops = [
   {
     id: "Drone-Workshop",
     title: "Drone Technologies",
-    desc1:
-      "Drone technologies is compromising computer systems for assessing security and acting in good faith by informing the vulnerable party People believe that “hacking” means to hack any website within a minute.",
+    desc: "Drone technologies is compromising computer systems for assessing security and acting in good faith by informing the vulnerable party People believe that “hacking” means to hack any website within a minute.",
     // desc2: `This concept comes from watching movies, so they do not even know the original basic concept of what it means to hack or how to do it. `,
     // desc3:To crack passwords or to steal data? No, DRone technologies is much more than that. DRone technologies is to scan vulnerabilities and to find potential threats on a computer or network. An ethical hacker finds the weak points or loopholes in a computer, web applications, or network and reports them to the organization.,
     no_of_rules: 3,

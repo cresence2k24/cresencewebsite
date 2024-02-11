@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
-import Event from "./pages/eventPage";
 import EventPage from "./pages/eventPage";
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -17,6 +16,10 @@ const App = () => {
           <Routes>
             <Route index element={<Home />} />
             <Route path="/events/:id" element={<EventPage />} />
+            <Route
+              path="/workshops/:id"
+              element={<EventPage Workshop={true} />}
+            />
           </Routes>
         </BrowserRouter>
       </div>
