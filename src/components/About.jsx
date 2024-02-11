@@ -1,9 +1,6 @@
 import React from 'react';
-
-import { BsArrowUpRight } from 'react-icons/bs'
-import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
-import { Link } from 'react-scroll';
+import { BsArrowUpRight } from 'react-icons/bs';
+import {RevealLeft,RevealRight} from './Reveal';
 
 const aboutlst = [
   {
@@ -25,18 +22,22 @@ const aboutlst = [
 
 
 const About = () => {
+
   return (
   <section className='section' id='about'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row justify-between items-center'>
-        <div>
-          <motion.h2 variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='h2 text-accent mb-6'>About Constelle</motion.h2>
-          <motion.h3 variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='h3 max-w-[455px] mb-16'>CreSencE?</motion.h3>
-          <motion.p variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='max-w-[455px]'>Hola amigos …! We present you, the biggest college fest in Vizianagaram . CreSencE, with its inception in the year 2007. CreSencE is a Two-day National level Technical Symposium organized by department of Computer Science and Engineering of Jawaharlal Nehru Technological University Gurajada Vizianagaram, has a benchmark for excellence in organizing Technical and non-Technical Events on a breeze of Euphoria with a footfall of thousands.</motion.p>
-          <a href='https://jntugv.edu.in/' target = '_blank_' className='btn btn-sm my-9' smooth = {true}>About College</a>
+        <RevealRight>
+        <div id='about1'>
+          <h2 className='h2 text-accent mb-6'>About Constelle</h2>
+          <h3 className='h3 max-w-[455px] mb-16'>CreSencE?</h3>
+          <p className='max-w-[455px]'>Hola amigos …! We present you, the biggest college fest in Vizianagaram . CreSencE, with its inception in the year 2007. CreSencE is a Two-day National level Technical Symposium organized by department of Computer Science and Engineering of Jawaharlal Nehru Technological University Gurajada Vizianagaram, has a benchmark for excellence in organizing Technical and non-Technical Events on a breeze of Euphoria with a footfall of thousands.</p>
+          <a href='https://jntugv.edu.in/' target = '_blank_' className='btn btn-sm my-9'>About College</a>
         </div>
-        <div>
-          <motion.div variants={fadeIn('right', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }}>
+        </RevealRight>
+        <RevealLeft>
+        <div id='about2'>
+          <div>
             {aboutlst.map((ab,index)=> {
               const {name,description,link} = ab;
               return (
@@ -46,18 +47,18 @@ const About = () => {
                   <p className='font-secondary leading-tight'>{description}</p>
                 </div>
                 <div className='flex flex-col flex-1 items-end'>
-                  <a href="#" className='btn w-9 h-9 mb-[35px] flex justify-center items-center'>
+                  <div className='btn w-9 h-9 mb-[35px] flex justify-center items-center'>
                     <BsArrowUpRight />
-                  </a>
-                  {/* <a href='#' className='text-gradient text-sm'>{link}</a> */}
+                  </div>
 
                 </div>
                 
               </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
+        </RevealLeft>
       </div>
     </div>
   </section>

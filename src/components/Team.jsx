@@ -1,8 +1,5 @@
-// import React, { useRef, useState } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
 import Img1 from '../assets/team2.webp';
 import Img2 from '../assets/team1.webp';
 import Img3 from '../assets/team3.webp';
@@ -11,14 +8,12 @@ import Img5 from '../assets/team5.webp';
 import Img6 from '../assets/team6.webp';
 import Img7 from '../assets/team7.webp';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
+import {Reveal} from './Reveal';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 import './styles.css';
-
-// import required modules
 import { EffectCards ,Navigation } from 'swiper/modules';
 
 const teamlst = [];
@@ -28,10 +23,13 @@ export default function Team() {
       <>
         <div className='container flex flex-col lg:flex-row lg:justify-between items-center lg:mt-30'>
           <div className='flex flex-col justify-center items-center mx-10 mb-8'>
-            <motion.h2 variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='h2 text-accent mb-6'>Our Team</motion.h2>
-            <motion.p variants={fadeIn('left', 0.05)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='max-w-[455px]'>The team of "Cresence" is a dynamic group of young individuals who are eager to make a difference in the tech industry. Their hard work, dedication, and passion for technology are reflected in the success of the festival, making it an exciting and enriching experience for all participants.</motion.p>
+            <Reveal>
+            <h2 className='h2 text-accent mb-6'>Our Team</h2>
+            </Reveal>
+            <Reveal>
+            <p className='max-w-[455px]'>The team of "Cresence" is a dynamic group of young individuals who are eager to make a difference in the tech industry. Their hard work, dedication, and passion for technology are reflected in the success of the festival, making it an exciting and enriching experience for all participants.</p>
+            </Reveal>
           </div>
-
           <div className='swipeCards mx-10 lg:h-[40]'>
             <Swiper
               effect={'cards'}
@@ -329,7 +327,7 @@ export default function Team() {
 </div>
               </SwiperSlide>
             </Swiper>
-            <div className="slider-controller hidden lg:pt-5 lg:flex lg:gap-x-10 lg:justify-center">
+            <div className="slider-controller pt-5 hidden lg:flex gap-x-10 justify-center">
               <div className="swiper-b-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
               <FaArrowLeftLong />
               </div>

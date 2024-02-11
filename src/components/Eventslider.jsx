@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Img2 from '../assets/img2.png';
 import codequest from '../assets/codequest.avif';
 import typesprint from '../assets/typesprint.webp';
 import cipher from "../assets/cipherchase.avif";
@@ -15,30 +13,24 @@ import quiz from '../assets/quiz.avif';
 import freefire from '../assets/freefire.jpg';
 import bgmi from '../assets/bgmi.avif';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
+import {Reveal} from './Reveal';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
-// import { Navigation } from "swiper";
-
-// import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-// import './eventstyles.css';
 
-// import required modules
 import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 
-// SwiperCore.use([MouseWheel,Pagination]);
 export default function EventSlider() {
   return (
     <div className='section'>
     <><div className='container flex flex-col jusify-center items-center gap-y-10 lg:gap-y-5'>
         <div className='lg:h-[35] flex flex-col justify-center items-center'>
-        <motion.p variants={fadeIn('left', 0.01)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient max-w-sm mb-8'>Tech Events</motion.p>
+        <Reveal>
+        <p className='text-gradient max-w-sm mb-8'>Tech Events</p>
+        </Reveal>
         <div className='lg:h-[35]'>
         <Swiper
           // slidesPerView={1.25}
@@ -84,54 +76,7 @@ export default function EventSlider() {
           className="mySwiper1"
 
         >
-            {/* <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Type Sprint</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March-timings..</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
-              <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='scale-125 transition-all duration-500' src={Img2} alt=''></img>
-              <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Drone Technologies</span>
-              </div>
-              <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
-                <span className='text-2xl text-white'>1st March</span>
-              </div>
-              </div>
-            </SwiperSlide> */}
+            
             <SwiperSlide>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -193,7 +138,7 @@ export default function EventSlider() {
               </div>
             </SwiperSlide>
             </Swiper>
-            <div className="slider-controller hidden lg:flex lg:gap-x-10 lg:justify-center">
+            <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
               <div className="swiper-buton-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
               <FaArrowLeftLong />
               </div>
@@ -205,7 +150,9 @@ export default function EventSlider() {
         </div>
         </div>
         <div className='lg:h-[35] flex flex-col justify-center items-center'>
-        <motion.p variants={fadeIn('left', 0.01)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='text-gradient max-w-sm mb-8'>Non-Tech Events</motion.p>
+        <Reveal>  
+        <p className='text-gradient max-w-sm mb-8'>Non-Tech Events</p>
+        </Reveal>
         <div className='lg:h-[35]'>
         <Swiper
           // slidesPerView={1.25}
@@ -336,7 +283,7 @@ export default function EventSlider() {
               </div>
             </SwiperSlide>
         </Swiper>
-        <div className="slider-controller hidden lg:flex lg:gap-x-10 lg:justify-center">
+        <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
               <div className="swiper-buton-p slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
               <FaArrowLeftLong />
               </div>

@@ -12,7 +12,6 @@ module.exports = {
       },
     },
     screens: {
-      // xs: '320px',
       sm: '640px',
       md: '768px',
       lg: '960px',
@@ -25,23 +24,9 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.webp')",
+        hero: "url('./assets/hero-banner.jpg')",
       },
-      animation: {
-        'gradient': 'gradient 8s linear infinite',
-      },
-      keyframes: {
-        "gradient" :{
-          "0": {
-            backgroundPosition: "0% 50%"
-          },
-          '50' :{
-            backgroundPosition: "100% 50%"
-          },
-          '100': {
-            backgroundPosition: "0% 50%"
-          }
-        }
-      }
+     
     },
   },
   plugins: [],

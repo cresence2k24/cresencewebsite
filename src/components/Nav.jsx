@@ -1,11 +1,9 @@
 import React from 'react';
-import { BiHomeAlt, BiUser } from 'react-icons/bi'
+import { BiHomeAlt } from 'react-icons/bi'
 import { RiTeamLine } from "react-icons/ri";
-// import { FcAbout } from "react-icons/fc";
-import { FaChalkboardTeacher } from "react-icons/fa";
+
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { MdOutlineEventAvailable } from "react-icons/md";
-import { IoTimerOutline } from "react-icons/io5";
 import { GiCash } from "react-icons/gi";
 import { Link } from 'react-scroll';
 
