@@ -3,8 +3,9 @@ import React from "react";
 import Img1 from "../assets/Images/drone.avif";
 import Img2 from "../assets/Images/genAI.avif";
 import { Reveal, RevealLeft, RevealRight } from "./Reveal";
+import { Link } from "react-router-dom";
 
-const Events = () => {
+const Events = (props) => {
   return (
     <section className="section lg:mt-10" id="events">
       <div className="container mx-auto">
@@ -20,12 +21,13 @@ const Events = () => {
                   Tech ,Nontech & Cultural
                 </p>
                 <p className="max-w-sm mb-4">
-                  Premium: Accomodation<br></br>Normal: Registration
+                  <span className="text-gradient">Premium:</span> Accomodation + Food (@2days)<br></br><span className="text-gradient">Normal:</span> Registration + Food (@2days)
                 </p>
                 <button className="btn btn-sm">Book Slot</button>
               </div>
             </Reveal>
             <RevealRight>
+              <Link>
               <div
                 id="workshop1"
                 className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]"
@@ -43,6 +45,7 @@ const Events = () => {
                   <span className="text-3xl text-white">1st March</span>
                 </div>
               </div>
+              </Link>
             </RevealRight>
           </div>
           <RevealLeft>
