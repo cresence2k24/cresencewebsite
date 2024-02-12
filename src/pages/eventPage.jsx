@@ -6,7 +6,7 @@ import EventComp from "../components/eventComponent";
 
 const EventPage = (props) => {
   return (
-    <div className="bg-site bg-cover bg-no-repeat overflow-hidden flex flex-col justify-center lg:h-[full]">
+    <div className="bg-site bg-no-repeat overflow-hidden flex flex-col justify-center min-h-[100vh] pb-20">
       <ScrollToTop />
       <Header />
       <EventComp Workshop={props.Workshop} />

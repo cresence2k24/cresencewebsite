@@ -27,7 +27,7 @@ const Events = (props) => {
               </div>
             </Reveal>
             <RevealRight>
-              <Link>
+              <Link to="/workshops/Drone-Workshop">
               <div
                 id="workshop1"
                 className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]"
@@ -42,13 +42,14 @@ const Events = (props) => {
                   <span className="text-gradient">Drone Technologies</span>
                 </div>
                 <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-40">
-                  <span className="text-3xl text-white">1st March</span>
+                  <span className="text-3xl text-white">1st & 2nd March</span>
                 </div>
               </div>
               </Link>
             </RevealRight>
           </div>
           <RevealLeft>
+            <Link to="/workshops/Generative-Ai-Workshop">
             <div
               id="workshop2"
               className="flex-1 flex-col lg:h-[490px] lg:w-[565px]"
@@ -68,6 +69,7 @@ const Events = (props) => {
                 </div>
               </div>
             </div>
+            </Link>
           </RevealLeft>
         </div>
       </div>

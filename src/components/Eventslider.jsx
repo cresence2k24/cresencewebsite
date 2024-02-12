@@ -14,6 +14,7 @@ import freefire from '../assets/Images/freefire.jpg';
 import bgmi from '../assets/Images/bgmi.avif';
 import { FaArrowRightLong , FaArrowLeftLong } from "react-icons/fa6";
 import {Reveal} from './Reveal';
+import { Link } from "react-router-dom";
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -21,7 +22,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { FreeMode, Pagination, Navigation } from 'swiper/modules';
+import { FreeMode, Navigation } from 'swiper/modules';
 
 export default function EventSlider() {
   return (
@@ -59,9 +60,9 @@ export default function EventSlider() {
             }}
           spaceBetween={30}
           freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={{
             nextEl: '.swiper-buton-next',
             prevEl: '.swiper-buton-prev',
@@ -72,13 +73,13 @@ export default function EventSlider() {
               delay: 2500,
               disableOnInteraction: false,
             }}
-          modules={[FreeMode, Pagination ,Navigation]}
+          modules={[FreeMode,Navigation]}
           className="mySwiper1"
 
         >
             
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Type-Sprint" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={typesprint} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -87,10 +88,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Code-Quest" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={codequest} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -99,10 +100,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Logic-League" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/40 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={logicleague} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -111,10 +112,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Cipher-Chase" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={cipher} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -123,10 +124,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Crypto-Venture" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/40 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={captureflag} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -135,7 +136,7 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             </Swiper>
             <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
@@ -181,9 +182,9 @@ export default function EventSlider() {
             }}
           spaceBetween={30}
           freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -193,13 +194,13 @@ export default function EventSlider() {
               prevEl: '.swiper-buton-p',
               clickable: true,
             }}
-          modules={[FreeMode, Pagination ,Navigation]}
+          modules={[FreeMode,Navigation]}
           className="mySwiper1"
 
         >
             
             <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+            <Link to="/events/Hunt-The-Hint" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px] lg:h-[250px]' src={hunt} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -208,10 +209,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+            <Link to="/events/Ex-Quiz-Me" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/20 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={quiz} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -220,10 +221,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Ipl-Auction" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={ipl} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -232,10 +233,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Movie-Madness" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={moviemad} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -244,10 +245,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/events/Get-Grab-Gather" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px] lg:w-full' src={beg} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -256,10 +257,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={freefire} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -268,10 +269,10 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+              <Link to="/" className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
               <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='scale-125 transition-all duration-500 h-[248px]' src={bgmi} alt=''></img>
               <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-50'>
@@ -280,7 +281,7 @@ export default function EventSlider() {
               <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50'> 
                 <span className='text-2xl text-white'>1st March</span>
               </div>
-              </div>
+              </Link>
             </SwiperSlide>
         </Swiper>
         <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
