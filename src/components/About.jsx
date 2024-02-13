@@ -55,7 +55,7 @@ const About = () => {
                   const { name, description } = ab;
                   return (
                     <div
-                      className="border-b border-white/20 h-[190px] lg:h-[146px] mb-[38px] flex justify center"
+                      className="border-b border-white/20  ] mb-[38px] flex justify center"
                       key={index}
                     >
                       <div className="max-w-[476px]">
