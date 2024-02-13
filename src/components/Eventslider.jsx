@@ -204,12 +204,12 @@ export default function EventSlider() {
               </div>
             </div>
             <div className="viewall lg:hidden">
-              <a
-                href="/events"
+              <Link
+                to="/techevents"
                 className="btn btn-sm"
               >
                 View all
-              </a>
+              </Link>
             </div>
             </div>
           </div>
@@ -427,12 +427,12 @@ export default function EventSlider() {
               </div>
             </div>
             <div className="viewall lg:hidden">
-              <a
-                href="/events"
+              <Link
+                to="/nontechevents"
                 className="btn btn-sm"
               >
                 View all
-              </a>
+              </Link>
             </div>
             </div>
           </div>
