@@ -30,28 +30,18 @@ const EventComp = (props) => {
                   Event Rules:
                 </h2>
                 <ul class="list-disc list-inside text-white">
-                  
-                  <li>
-                    {item.rule1}
-                  </li>
-                  <li>
-                    {item.rule2}
-                  </li>
-                  <li>
-                    {item.rule3}
-                  </li>
-                  <li>
-                    {item.rule4}
-                  </li>
-                  <li>
-                    {item.rule5}
-                  </li>
+                  <li>{item.rule1}</li>
+                  <li>{item.rule2}</li>
+                  <li>{item.rule3}</li>
+                  <li>{item.rule4}</li>
+                  <li>{item.rule5}</li>
                   {/* <!-- Add more rules as needed --> */}
                 </ul>
 
                 <ul class="list-disc list-inside text-white pt-8">
                   <li>
-                    <span class="text-gradient">Entry Fee:</span> {item.list.amount}
+                    <span class="text-gradient">Entry Fee:</span>{" "}
+                    {item.list.amount}
                   </li>
                   <li>
                     <span class="text-gradient">Mode of Participation :</span>{" "}
@@ -67,10 +57,18 @@ const EventComp = (props) => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-center space-x-4">
-                <a href={item.link} class="bg-blue-500 text-white px-4 py-2 btn btn-sm">
+                <a
+                  href={item.link}
+                  target="blank"
+                  class="bg-blue-500 text-white px-4 py-2 btn btn-sm"
+                >
                   Register
                 </a>
-                <a href={item.link} class="bg-gray-500 text-white px-4 py-2 btn btn-sm">
+                <a
+                  href={item.link}
+                  target="blank"
+                  class="bg-gray-500 text-white px-4 py-2 btn btn-sm"
+                >
                   Learn More
                 </a>
               </div>
@@ -128,12 +126,14 @@ const EventComp = (props) => {
               <div class="flex justify-center space-x-4">
                 <a
                   href={item.registration_link}
+                  target="blank"
                   class="bg-blue-500 text-white px-4 py-2 btn btn-sm"
                 >
                   Register
                 </a>
                 <a
                   href={item.learn_more}
+                  target="blank"
                   class="bg-gray-500 text-white px-4 py-2 btn btn-sm"
                 >
                   Learn More
