@@ -220,7 +220,7 @@ export default function EventSlider() {
           <div class="lg:flex lg:justify-between lg:w-[80vw] items-center">
           <div class="lg:flex lg:items-center">
             <div class="viewall lg:ml-auto invisible">
-                <Link to="/techevents" class="btn btn-sm">
+                <Link to="/nontechevents" class="btn btn-sm">
                     View all
                 </Link>
           </div>
