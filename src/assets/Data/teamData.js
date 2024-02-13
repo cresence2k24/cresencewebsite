@@ -45,7 +45,7 @@ export const teamData = [
     id: 5,
     image: satya,
     name: "G Satyanarayana",
-    role: "Fest Coordinator",
+    role: "Website Developer",
     github: "https://github.com/GSatya147",
     twitter: "https://twitter.com/satyana21116023",
     linkedin: "https://www.linkedin.com/in/satya-narayana-b2b38b257",
