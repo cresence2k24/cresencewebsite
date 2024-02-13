@@ -75,6 +75,7 @@ const eventsData = [
     cash_prize: "1500/-",
     registration_link: "https://forms.gle/8GyDfkHH3qNGC7Lh8",
     img: logic,
+    team: "Individual",
     learn_more:
       "https://docs.google.com/document/d/1nnQF_ewV-ExGxYwsdLhctyrYRsr43cdM/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
   },
@@ -214,7 +215,7 @@ const eventsData = [
   },
   {
     id: "Ipl-Auction",
-    title: "IPL AUCTION",
+    title: "IPL-AUCTION",
     entry_fee: "INR 150",
     description:
       "This game is called “IPL Auction”. In this auction, participants take on the role of team owners and bid for players based on their skills, performance, and availability. The auction is conducted in rounds, with each team trying to assemble the best possible squad within a specified budget. The event can be a great way to bring cricket fans together and create a friendly competitive atmosphere. It can also help participants gain a better understanding of the real IPL auction process and the factors that influence player values. Also, get a chance to win many exciting prizes.",

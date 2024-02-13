@@ -9,9 +9,9 @@ const EventComp = (props) => {
     return WorkshopsData.map((item) => {
       if (item.id === location) {
         return (
-          <div class=" px-4 lg:px-16 flex flex-col justify-center items-center lg:flex-row">
+          <div class=" px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start">
             <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
-              <h1 class="text-gradient text-4xl font-bold mb-4">
+              <h1 class="text-gradient text-center text-4xl font-bold mb-4">
                 {item.title}
               </h1>
               <img
@@ -30,46 +30,49 @@ const EventComp = (props) => {
                   Event Rules:
                 </h2>
                 <ul class="list-disc list-inside text-white">
+                  
                   <li>
-                    Ethical Conduct: Participants must adhere to ethical
-                    standards and conduct themselves in a responsible and lawful
-                    manner. Unethical behavior, including any attempt to
-                    compromise the integrity of the competition or violate legal
-                    boundaries, is strictly prohibited.
+                    {item.rule1}
                   </li>
                   <li>
-                    Respect for Systems: Participants must respect the integrity
-                    of the systems and challenges provided for the event. Any
-                    malicious actions, such as attempting to disrupt services or
-                    intentionally damaging infrastructure, are not allowed.
+                    {item.rule2}
+                  </li>
+                  <li>
+                    {item.rule3}
+                  </li>
+                  <li>
+                    {item.rule4}
+                  </li>
+                  <li>
+                    {item.rule5}
                   </li>
                   {/* <!-- Add more rules as needed --> */}
                 </ul>
 
                 <ul class="list-disc list-inside text-white pt-8">
                   <li>
-                    <span class="text-gradient">Entry Fee:</span> 500/-
+                    <span class="text-gradient">Entry Fee:</span> {item.list.amount}
                   </li>
                   <li>
                     <span class="text-gradient">Mode of Participation :</span>{" "}
-                    Team
+                    {item.list.team}
                   </li>
-                  <li>
+                  {/* <li>
                     <span class="text-gradient">Prize Pool :</span> click on
                     view more
-                  </li>
+                  </li> */}
                   {/* <!-- Add more rules as needed --> */}
                 </ul>
               </div>
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-center space-x-4">
-                <button class="bg-blue-500 text-white px-4 py-2 btn btn-sm">
+                <a href={item.link} class="bg-blue-500 text-white px-4 py-2 btn btn-sm">
                   Register
-                </button>
-                <button class="bg-gray-500 text-white px-4 py-2 btn btn-sm">
+                </a>
+                <a href={item.link} class="bg-gray-500 text-white px-4 py-2 btn btn-sm">
                   Learn More
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -80,9 +83,9 @@ const EventComp = (props) => {
     return Techevents.map((item) => {
       if (item.id === location) {
         return (
-          <div class=" px-4 lg:px-16 flex flex-col justify-center items-center lg:flex-row">
-            <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
-              <h1 class="text-gradient text-4xl font-bold mb-4">
+          <div class=" px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start">
+            <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-start gap-y-4 items-center">
+              <h1 class="text-gradient text-4xl font-bold text-center mb-4">
                 {item.title}
               </h1>
               <img
