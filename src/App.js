@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import EventPage from "./pages/eventPage";
+import Contact from "./pages/contact";
+import Notfound from "./pages/NotFound";
 import TechLandingpage from "./pages/TechEventLandingPage";
 import NonTechLandingPage from "./pages/NonTechLandingPage";
 import WorkshopLandingPage from "./pages/WorkshopLandingPage";
@@ -23,10 +25,10 @@ const App = () => {
             <Route path="/nontechevents" element={<NonTechLandingPage />} />
             <Route path="/workshops" element={<WorkshopLandingPage />} />
             <Route path="/events/:id" element={<EventPage />} />
-            <Route
-              path="/workshops/:id"
-              element={<EventPage Workshop={true} />}
-            />
+            <Route path="/workshops/:id" element={<EventPage />} />
+            <Route path="/contact" element={<Contact />} />
+
+            <Route path="*" element={<Notfound />} />
           </Routes>
         </BrowserRouter>
       </div>

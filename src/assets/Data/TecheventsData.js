@@ -13,6 +13,7 @@ import makefamous from "../Images/MakeMeFamous.jpg";
 const eventsData = [
   {
     id: "Cipher-Chase",
+    type: "Tech",
     title: "CIPHER CHASE",
     entry_fee: "150 Rs per Team (2 or 3)",
     rules: [
@@ -37,6 +38,7 @@ const eventsData = [
   },
   {
     id: "Type-Sprint",
+    type: "Tech",
     title: "TYPE SPRINT",
     entry_fee: "80/-",
     rules: [
@@ -50,7 +52,7 @@ const eventsData = [
       "Participants must be available 20 min before the event starts",
     ],
     description:
-      "Type Sprint is a thrilling event that showcases participants' speed and accuracy in keyboard proficiency. In this event, individuals go head-to-head, racing against the clock to transcribe and input text with precision. The competition measures not only the contestants' ability to type quickly but also their attention to detail, as errors can result in time penalties. With fingers flying across the keyboard, participants navigate through challenging texts, ranging from complex paragraphs to technical jargon, testing their typing prowess under pressure. As the seconds tick away, the Typing Competition emerges as a captivating display of skill, concentration, and the quest for keyboard supremacy.",
+      "Type Sprint is a high-speed typing competition where participants race against each other to accurately transcribe and input text. It tests both typing speed and precision, with contestants navigating through challenging passages ranging from complex paragraphs to technical jargon. Errors incur time penalties, adding pressure to maintain accuracy while typing quickly. It's a captivating display of skill, concentration, and the pursuit of keyboard supremacy.",
     cash_prize: "Upto 1500/-",
     team: "Individual",
     registration_link: "https://forms.gle/ZqAT7XywEUkcvnK9A",
@@ -62,6 +64,7 @@ const eventsData = [
   {
     id: "Logic-League",
     title: "LOGIC LEAGUE",
+    type: "Tech",
     entry_fee: "80/- per head",
     description:
       "Logic League is a tech event consisting of 2 rounds that are code shuffling and code memorizing in which basic and easy code questions are given. In code shuffling the lines in the code snippet are jumbled and should be arranged in order. In code memorizing code snippet will be given and questions will be asked based on the provided code.",
@@ -85,10 +88,11 @@ const eventsData = [
   {
     id: "Code-Quest",
     title: "Code Quest",
+    type: "Tech",
     entry_fee: "80/-",
     type: "tech",
     description:
-      "Embark on a coding adventure with the Code Quest Challenge! Dive into the digital world and showcase your coding skills in three exciting rounds. Get ready to solve problems and let your creativity shine!",
+      "'Code Quest' is a coding competition where participants showcase their skills in three rounds. They'll tackle problems, demonstrate creativity, and dive into the digital world to solve coding challenges. It's an exciting adventure that puts coding skills to the test and rewards creativity and problem-solving prowess.",
 
     rules: [
       "The competition is open to all individuals, regardless of their age, gender, or location. However, participants must have access to a computer and an internet connection.",
@@ -114,6 +118,7 @@ const eventsData = [
   {
     id: "Crypto-Venture",
     title: "CRYPTO VENTURE",
+    type: "Tech",
     entry_fee: "120 Rs per Team",
     type: "tech",
     rules: [
@@ -136,6 +141,7 @@ const eventsData = [
   {
     id: "Ex-Quiz-Me",
     title: "EX-QUIZ-ME",
+    type: "Non-Tech",
     entry_fee: "150/- per team",
     rules: [
       "Only team entries are allowed, and the team shall consist of two or three persons.",
@@ -144,7 +150,8 @@ const eventsData = [
       "Supporters/other team members shall not give any hints or clues to the competitors.",
       "Replacement of any participant of a team is not allowed after registration.",
     ],
-    description: "There will be three rounds in the quiz competition:",
+    description:
+      "'Ex-Quiz-Me' is a fun game where people answer questions on various topics like general knowledge, movies or current events. It's not about technical stuff like computers or science, but more about everyday things everyone can relate to.Participants form teams or play individually. The event is conducted at three levels by eliminating few teams at each stage.The questions can be easy or challenging depending on the audience. It's a great way to test your knowledge, learn new facts, and have a good time with friends.",
     team: "Team of 3",
     img: quiz,
     cash_prize: "1500/-",
@@ -155,10 +162,11 @@ const eventsData = [
   {
     id: "Get-Grab-Gather",
     title: "Get/Grab/Gather",
+    type: "Non-Tech",
     entry_fee: "150/-",
     cash_prize: "1000/-",
     description:
-      "Get Grab Gather is a non-technical event in which a list of items is given to the team, and the participants have to collect the things mentioned. The participants have to gather things either by getting or grabbing.",
+      "Get Grab Gather is a fun game, where each team comprising of 2 or 3 members are given a list of items to collect in a 45 minutes period. They can get the items either by persuasion(beg) , negotiation(borrow) or daring tactics(steal) . The team that manages to get all the items or maximum number of items is declared as the winner.",
     rules: [
       "Get Grab Gather is a team event and can contain 2-3 members.",
       "The teams will be provided with a list of particular items.",
@@ -177,6 +185,7 @@ const eventsData = [
   {
     id: "Hunt-The-Hint",
     title: "HUNT THE HINT",
+    type: "Non-Tech",
     entry_fee: "150/-Team",
 
     rules: [
@@ -188,8 +197,7 @@ const eventsData = [
       "Hints will be provided to the participants, who must follow up on the hints to find a hidden hunt.",
       "Participants of each team must handover all the clues collected at the end of the game. Only the team which does not handover all the clues of their set will not be considered as the winner even if they completed their task first.",
     ],
-    description:
-      "The game is called “HUNT THE HINT” and it is a non-technical game that requires participants to use their knowledge to solve the hints to find a hidden hunt. The game consists of three members of a team, and each team solves their clues using their knowledge and environmental thinking based on the arrangement of clues.",
+    description: `'Hunt The Hunt' is a fun and adventurous activity where players follow clues or a map to find hidden treasures or objects. Players work together or compete against each other to solve puzzles, decipher clues, and navigate through various locations in search of the treasure. Here the end treasure could be anything, ranging from a small prize money to a significant object. It's a great way to promote teamwork, problem-solving skills, and creativity while having an exciting time with friends. We ensure that this game It fosters teamwork, problem-solving, and creativity while enjoying quality time with friends.`,
     cash_prize: "1000 INR",
     team: "Team of 2 or 3",
     img: hunt,
@@ -200,6 +208,7 @@ const eventsData = [
   {
     id: "Make-Me-Famous",
     title: "MAKE ME FAMOUS",
+    type: "Non-Tech",
     entry_fee: "40/- per post",
     cash_prize: "up to 1000/-",
     img: makefamous,
@@ -221,10 +230,10 @@ const eventsData = [
   },
   {
     id: "Ipl-Auction",
+    type: "Non-Tech",
     title: "IPL-AUCTION",
     entry_fee: "INR 150",
-    description:
-      "This game is called “IPL Auction”. In this auction, participants take on the role of team owners and bid for players based on their skills, performance, and availability. The auction is conducted in rounds, with each team trying to assemble the best possible squad within a specified budget. The event can be a great way to bring cricket fans together and create a friendly competitive atmosphere. It can also help participants gain a better understanding of the real IPL auction process and the factors that influence player values. Also, get a chance to win many exciting prizes.",
+    description: `Introducing "IPL Auction," a thrilling event where participants step into the shoes of team owners and engage in strategic bidding wars for cricket players. With each round, teams aim to craft their dream squad by acquiring players based on their skills, track record, and availability, all while managing a set budget. This immersive experience not only brings cricket enthusiasts together but also fosters a friendly yet competitive environment. Participants will gain valuable insights into the dynamics of the actual IPL auction process, learning about the factors that determine player values. Moreover, exciting prizes await those who showcase their tactical prowess and emerge victorious in this ultimate cricket showdown.`,
     rules: [
       "The game is open to participants of all ages.",
       "Each team can contain a maximum of 3 members.",
@@ -247,6 +256,7 @@ const eventsData = [
   },
   {
     id: "Movie-Madness",
+    type: "Non-Tech",
     title: "MOVIE MADNESS",
     entry_fee: "150 Rs per Team",
     rules: [
@@ -258,7 +268,7 @@ const eventsData = [
       "After the 1st Round, 7 teams will be qualified. The submission time of the answer is considered when there are more than 7 teams. The same thing also applies to the 2nd round. In the 2nd round based on pictorial representation, after this round, 3 teams will qualify for the final round.",
     ],
     description:
-      "This game is based on the movies which give us a feeling of joy and happiness. For this, there is required keen knowledge towards movies like movie names, dialogues, and songs. The game consists of 3 rounds. The first round is based on pictorial representation, which displays the images related to movie names and songs. The second round is also based on pictorial representation, which displays memes related visuals and asks questions based on it. The third round is the final round which is based on the topic related to a particular topic and asks questions on it.",
+      "Movie madness is for all the Cinephiles out there....This game is based on the movies which give us a feeling of joy and happiness. For this, a keen knowledge in movies is required. That includes...movie names, dialogues, and songs. A team consisting of 2 or 3 members can participate and the game is conducted in three stages along with elimination at each level.",
 
     cash_prize: "1000 INR",
     img: moive,
