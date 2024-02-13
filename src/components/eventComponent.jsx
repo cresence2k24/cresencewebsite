@@ -16,7 +16,7 @@ const EventComp = () => {
     if (item === null) {
       navigate("/NotFound");
     }
-  }, []);
+  }, [item, navigate]);
 
   if (item === null) {
     return null;

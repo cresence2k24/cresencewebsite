@@ -13,7 +13,7 @@ import makefamous from "../Images/MakeMeFamous.jpg";
 const eventsData = [
   {
     id: "Cipher-Chase",
-    type: "Tech",
+
     title: "CIPHER CHASE",
     entry_fee: "150 Rs per Team (2 or 3)",
     rules: [
@@ -38,7 +38,7 @@ const eventsData = [
   },
   {
     id: "Type-Sprint",
-    type: "Tech",
+
     title: "TYPE SPRINT",
     entry_fee: "80/-",
     rules: [
@@ -64,7 +64,7 @@ const eventsData = [
   {
     id: "Logic-League",
     title: "LOGIC LEAGUE",
-    type: "Tech",
+
     entry_fee: "80/- per head",
     description:
       "Logic League is a tech event consisting of 2 rounds that are code shuffling and code memorizing in which basic and easy code questions are given. In code shuffling the lines in the code snippet are jumbled and should be arranged in order. In code memorizing code snippet will be given and questions will be asked based on the provided code.",
@@ -88,7 +88,7 @@ const eventsData = [
   {
     id: "Code-Quest",
     title: "Code Quest",
-    type: "Tech",
+
     entry_fee: "80/-",
     type: "tech",
     description:
@@ -118,7 +118,7 @@ const eventsData = [
   {
     id: "Crypto-Venture",
     title: "CRYPTO VENTURE",
-    type: "Tech",
+
     entry_fee: "120 Rs per Team",
     type: "tech",
     rules: [
