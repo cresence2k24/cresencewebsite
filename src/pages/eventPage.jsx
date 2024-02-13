@@ -6,12 +6,16 @@ import EventComp from "../components/eventComponent";
 
 const EventPage = (props) => {
   return (
-    <div className="bg-site bg-no-repeat overflow-hidden flex flex-col justify-center min-h-[100vh] pb-20">
+    <>
       <ScrollToTop />
-      <Header />
-      <EventComp Workshop={props.Workshop} />
-      <HomeComp />
-    </div>
+      <div className="bg-site bg-no-repeat overflow-hidden min-h-[100vh] pb-20 lg:pb-5">
+        <Header />
+        <div className="flex flex-col justify-center  min-h-[80vh]">
+          <EventComp Workshop={props.Workshop} />
+        </div>
+        <HomeComp />
+      </div>
+    </>
   );
 };
 

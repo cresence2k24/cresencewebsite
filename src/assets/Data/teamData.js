@@ -7,6 +7,15 @@ import seshu from "../Images/team6.webp";
 import jagan from "../Images/team7.webp";
 export const teamData = [
   {
+    id: 2,
+    image: Kalki,
+    name: "Pusarla Siva Kalki",
+    role: "Fest Coordinator",
+    github: "https://github.com/Sivakalki",
+    instagram: "https://www.instagram.com/kalki_pusarla",
+    // linkedin: "www.linkedin.com/in/akhilsaiboppudi",
+  },
+  {
     id: 1,
     image: akhil,
     name: "Akhil Sai Boppudi",
@@ -14,13 +23,6 @@ export const teamData = [
     twitter: "https://twitter.com/AkhilSai0099",
     github: "https://github.com/akhilsai0099",
     linkedin: "https://linkedin.com/in/akhilsaiboppudi",
-  },
-  {
-    id: 2,
-    image: Kalki,
-    name: "Pusarla Siva Kalki",
-    role: "Fest Coordinator",
-    // linkedin: "www.linkedin.com/in/akhilsaiboppudi",
   },
   {
     id: 3,
@@ -62,6 +64,6 @@ export const teamData = [
     image: jagan,
     name: "Jagan Mohan Rao Gunnu",
     role: "Non-Technical Coordinator",
-    // linkedin: "www.linkedin.com/in/akhilsaiboppudi",
+    instagram: "https://www.instagram.com/jaganmohangunnu",
   },
 ];

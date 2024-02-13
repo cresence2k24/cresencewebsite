@@ -25,7 +25,13 @@ const Footer = () => {
               <div className="flex flex-col lg:gap-2 pb-20 lg:pb-0 pt-5 lg:pt-0 justify-items-center items-center">
                 <h2 className="text-3xl text-white">Contact Us</h2>
                 <p className="text-gray-300"> +91 6301606734</p>
-                <p className="text-gray-300">cresence@jntugvcev.edu.in</p>
+                <a
+                  href="mailto:cresence@jntugvcev.edu.in"
+                  target="blank"
+                  className="text-gray-300"
+                >
+                  cresence@jntugvcev.edu.in
+                </a>
                 <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
                   <a
                     href="https://www.youtube.com/@cresencecse"
