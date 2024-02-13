@@ -2,6 +2,7 @@ import React from "react";
 import WorkshopsData from "../assets/Data/workshopdata";
 import Techevents from "../assets/Data/TecheventsData";
 import { useLocation } from "react-router-dom";
+import { Reveal } from "../components/Reveal";
 
 const EventComp = (props) => {
   const location = useLocation().pathname.split("/").at(-1);
@@ -9,8 +10,9 @@ const EventComp = (props) => {
     return WorkshopsData.map((item) => {
       if (item.id === location) {
         return (
+          <Reveal>
           <div class=" px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start">
-            <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
+            <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-start gap-y-4 items-center">
               <h1 class="text-gradient text-center text-4xl font-bold mb-4">
                 {item.title}
               </h1>
@@ -21,9 +23,8 @@ const EventComp = (props) => {
               />
               <p class="text-white pl-4 lg:pl-0 mb-4">{item.desc}</p>
             </div>
-
             <div class="hidden lg:block border-l border-gray-300 h-auto"></div>
-
+            
             <div class="w-full lg:w-1/2 pl-4 lg:block border-[#610d83] h-auto">
               <div class="text-left mb-4">
                 <h2 class="text-lg font-semibold mb-2 text-gradient">
@@ -74,6 +75,8 @@ const EventComp = (props) => {
               </div>
             </div>
           </div>
+          </Reveal>
+          
         );
       }
     });
@@ -81,6 +84,7 @@ const EventComp = (props) => {
     return Techevents.map((item) => {
       if (item.id === location) {
         return (
+          <Reveal>
           <div class=" px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start">
             <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-start gap-y-4 items-center">
               <h1 class="text-gradient text-4xl font-bold text-center mb-4">
@@ -141,6 +145,7 @@ const EventComp = (props) => {
               </div>
             </div>
           </div>
+          </Reveal>
         );
       }
     });
