@@ -61,14 +61,14 @@ const EventComp = () => {
         </div>
         <div class="flex justify-center space-x-4">
           <a
-            href={item.link}
+            href={item.registration_link}
             target="blank"
             class="bg-blue-500 text-white px-4 py-2 btn btn-sm"
           >
             Register
           </a>
           <a
-            href={item.link}
+            href={item.learn_more}
             target="blank"
             class="bg-gray-500 text-white px-4 py-2 btn btn-sm"
           >
