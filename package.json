@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "@vercel/speed-insights": "^1.0.9",
     "framer-motion": "^11.0.3",
-    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
@@ -43,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-countup": "^6.4.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.1",
