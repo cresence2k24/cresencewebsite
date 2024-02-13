@@ -8,6 +8,7 @@ import ggg from "../Images/beg.avif";
 import hunt from "../Images/huntthehint.avif";
 import ipl from "../Images/ipl.avif";
 import moive from "../Images/moviemad.avif";
+import makefamous from "../Images/MakeMeFamous.jpg";
 
 const eventsData = [
   {
@@ -30,7 +31,7 @@ const eventsData = [
     cash_prize: "1000 INR",
 
     team: "Team of 2 or 3",
-
+    type: "tech",
     registration_link: "https://forms.gle/u8dzSMLKapjBFL5h6",
     learn_more:
       "https://docs.google.com/document/d/1qiOeFwTfNHzGttL31b5iJqupd3-HkbsC/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
@@ -55,6 +56,7 @@ const eventsData = [
     cash_prize: "Upto 1500/-",
     team: "Individual",
     registration_link: "https://forms.gle/ZqAT7XywEUkcvnK9A",
+    type: "tech",
     img: typesprint,
     learn_more:
       "https://docs.google.com/document/d/1fSm5pt0mE5ieGXfmyv4SYQmV92R3Kwue/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
@@ -79,6 +81,7 @@ const eventsData = [
     registration_link: "https://forms.gle/8GyDfkHH3qNGC7Lh8",
     img: logic,
     team: "Individual",
+    type: "tech",
     learn_more:
       "https://docs.google.com/document/d/1nnQF_ewV-ExGxYwsdLhctyrYRsr43cdM/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
   },
@@ -87,6 +90,7 @@ const eventsData = [
     title: "Code Quest",
     type: "Tech",
     entry_fee: "80/-",
+    type: "tech",
     description:
       "'Code Quest' is a coding competition where participants showcase their skills in three rounds. They'll tackle problems, demonstrate creativity, and dive into the digital world to solve coding challenges. It's an exciting adventure that puts coding skills to the test and rewards creativity and problem-solving prowess.",
 
@@ -116,6 +120,7 @@ const eventsData = [
     title: "CRYPTO VENTURE",
     type: "Tech",
     entry_fee: "120 Rs per Team",
+    type: "tech",
     rules: [
       "Each team must consist of a maximum of two members.",
       "Participants must register for the game and pay the entry fee before the start of the game.",
@@ -206,6 +211,7 @@ const eventsData = [
     type: "Non-Tech",
     entry_fee: "40/- per post",
     cash_prize: "up to 1000/-",
+    img: makefamous,
     description:
       "Make Me Famous | CRESENCE2k24 invites all those passionate about being famous to participate in an online photo contest. It's time to step into the wow Instagram to show how much famous you are and your glamorous side.",
     rules: [

@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import EventPage from "./pages/eventPage";
 import Notfound from "./pages/NotFound";
+import TechLandingpage from "./pages/TechEventLandingPage";
+import NonTechLandingPage from "./pages/NonTechLandingPage";
+import WorkshopLandingPage from "./pages/WorkshopLandingPage";
 import ContactPage from "./pages/ContactPage";
 
 const App = () => {
@@ -14,10 +17,13 @@ const App = () => {
   }, []);
   return (
     !loading && (
-      <div>
+      <div className="select-none">
         <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
+            <Route path="/techevents" element={<TechLandingpage />} />
+            <Route path="/nontechevents" element={<NonTechLandingPage />} />
+            <Route path="/workshops" element={<WorkshopLandingPage />} />
             <Route path="/events/:id" element={<EventPage />} />
             <Route path="/workshops/:id" element={<EventPage />} />
             <Route path="/contact" element={<ContactPage />} />

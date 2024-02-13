@@ -18,7 +18,7 @@ const dataWorkshops = [
     entry_fee: "700/-",
     team: "Individual",
     img: img1,
-    learn_more: "/",
+    learn_more: "https://docs.google.com/document/d/1bo115VPEPtJU3LKsRqilALGZ6e7X01xr/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
   },
   {
     id: "Generative-Ai-Workshop",
@@ -37,7 +37,7 @@ const dataWorkshops = [
     entry_fee: "600/-",
     team: "Individual",
     img: img2,
-    learn_more: "/",
+    learn_more: "https://docs.google.com/document/d/1jGrZIUKtAGywXXwI4CYv4JwsfXSa_FoX/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
   },
 ];
 
