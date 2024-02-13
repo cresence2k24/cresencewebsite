@@ -13,7 +13,7 @@ const dataWorkshops = [
     rule5: "Participants will be provided high speed internet.",
     link: "https://forms.gle/QTBQtFLCQMDRM71Q7",
     list: {
-      amount: "600/-",
+      amount: "700/-",
       team: "Individual",
       prize: "",
     },
@@ -32,7 +32,7 @@ const dataWorkshops = [
     rule5: "Participants will be provided high speed internet.",
     link: "https://forms.gle/rLys7v9SnxkNcoML6",
     list: {
-      amount: "500/-",
+      amount: "600/-",
       team: "Individual",
       prize: 0,
     },
