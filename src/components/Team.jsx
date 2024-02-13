@@ -15,7 +15,7 @@ import { teamData } from "../assets/Data/teamData";
 
 export default function Team() {
   return (
-    <div className="section lg:mt-30" id="team">
+    <div className="section lg:mt-30 xl:min-h-[100vh]" id="team">
       <>
         <div className="container flex flex-col lg:flex-row lg:justify-between items-center lg:mt-30">
           <div className="flex flex-col justify-center items-center mx-10 mb-8">
