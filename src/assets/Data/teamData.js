@@ -5,6 +5,8 @@ import pranaya from "../Images/team4.webp";
 import satya from "../Images/team5.webp";
 import seshu from "../Images/team6.webp";
 import jagan from "../Images/team7.webp";
+import surya from "../Images/Surya.jpg";
+import narasimha from "../Images/narasimha.jpg";
 export const teamData = [
   {
     id: 2,
@@ -65,5 +67,22 @@ export const teamData = [
     name: "Jagan Mohan Rao Gunnu",
     role: "Non-Technical Coordinator",
     instagram: "https://www.instagram.com/jaganmohangunnu",
+  },
+  {
+    id: 8,
+    image: surya,
+    name: "Surya Vivek",
+    role: "Sponsorship Coordinator",
+    instagram: "https://www.instagram.com/t_surya_vivek",
+    linkedin: "https://www.linkedin.com/in/surya-vivek-284163226",
+  },
+  {
+    id: 9,
+    image: narasimha,
+    name: "Narasimha Sariki",
+    role: "Sponsorship Coordinator",
+    instagram: "https://www.instagram.com/haswanth03",
+    linkedin: "https://www.linkedin.com/in/narasimha-naidu-sariki-a658b6244",
+    github: "https://github.com/Haswanthsariki",
   },
 ];

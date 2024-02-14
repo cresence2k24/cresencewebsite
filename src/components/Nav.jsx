@@ -33,7 +33,7 @@ const Nav = () => {
             offset={-10}
             duration={500}
             to="about"
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className="hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center"
           >
             <div className="flex flex-col justify-center items-center ">
               <IoInformationCircleOutline className="text-2xl" />

@@ -14,7 +14,7 @@ import { EffectCards, Navigation } from "swiper/modules";
 import { teamData } from "../assets/Data/teamData";
 
 export default function Team() {
-  const teamData1 = teamData.slice(0, 7);
+  const teamData1 = teamData.slice(0, 9);
   return (
     <div className="section lg:mt-30 xl:min-h-[100vh]" id="team">
       <>
