@@ -90,10 +90,12 @@ body {
 
 .active {
   color: #fff;
-  padding: 1rem;
+  /* padding: 0.5rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  border-radius: 40%;
+  border-radius: 40%; */
+  border-bottom: 3px solid #406aff;
+
   box-shadow: 0px 4.42184px 120px black;
 }
 

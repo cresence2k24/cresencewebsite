@@ -86,16 +86,18 @@ function Contact() {
     );
   };
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 ">
       <Toaster />
-      <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-gradient">
+        Contact Us
+      </h1>
       <form
-        className="max-w-md mx-auto bg-white rounded-lg shadow-md p-8"
+        className="max-w-md mx-auto bg-transparent rounded-lg  p-8"
         method="POST"
         onSubmit={handleSubmit}
       >
         <div className="mb-6">
-          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="name" className="block text-white font-bold mb-2">
             Name:
           </label>
           <input
@@ -104,12 +106,12 @@ function Contact() {
             name="Name"
             onChange={handleOnChange}
             value={inputValues.Name}
-            className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="appearance-none  rounded-lg w-full py-2 px-3 bg-transparent border-[2px] border-purple-800 autofill:bg-transparent  text-white leading-tight focus:outline-none "
             placeholder="Enter your name"
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="email" className="block text-white font-bold mb-2">
             Email:
           </label>
           <input
@@ -118,14 +120,14 @@ function Contact() {
             name="Email"
             onChange={handleOnChange}
             value={inputValues.Email}
-            className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none rounded-lg w-full py-2 px-3 bg-transparent border-[2px] border-purple-800 autofill:bg-transparent text-white leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Enter your email"
             pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
             title="Please enter a valid Gmail address"
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="phone" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="phone" className="block text-white font-bold mb-2">
             Phone Number:
           </label>
           <input
@@ -134,16 +136,13 @@ function Contact() {
             name="Phone"
             value={inputValues.Phone}
             onChange={handleOnChange}
-            className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none rounded-lg w-full py-2 px-3 bg-transparent border-[2px] border-purple-800 autofill:bg-transparent text-white leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Enter your phone number"
             maxLength="10"
           />
         </div>
         <div className="mb-6">
-          <label
-            htmlFor="message"
-            className="block text-gray-700 font-bold mb-2"
-          >
+          <label htmlFor="message" className="block text-white font-bold mb-2">
             Message:
           </label>
           <textarea
@@ -152,14 +151,14 @@ function Contact() {
             onChange={handleOnChange}
             value={inputValues.Message}
             rows="4"
-            className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none rounded-lg w-full py-2 px-3 bg-transparent border-[2px] border-purple-800 text-white leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Enter your message"
           ></textarea>
         </div>
         <div className="flex items-center justify-center">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="btn btn-sm text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
