@@ -35,27 +35,27 @@ const Nav = () => {
                 more ? "h-[60px] overflow-y-hidden" : " h-0 overflow-hidden"
               } flex md:hidden transition-all duration-300`}
             >
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 spy={true}
                 smooth={true}
                 offset={-10}
                 duration={500}
-                to="about"
+                to="/about"
                 className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
               >
                 <div className="flex flex-col justify-center items-center ">
                   <IoInformationCircleOutline className="text-2xl" />
                   <p className="text-sm">About</p>
                 </div>
-              </Link>
+              </A>
               <Link
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="eventslider"
+                to="team"
                 className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -106,13 +106,13 @@ const Nav = () => {
                   <p className="text-sm">Home</p>
                 </div>
               </A>
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 spy={true}
                 smooth={true}
                 offset={-10}
                 duration={500}
-                to="about"
+                to="/about"
                 className="hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center"
                 onClick={handleMove}
               >
@@ -120,7 +120,7 @@ const Nav = () => {
                   <IoInformationCircleOutline className="text-2xl" />
                   <p className="text-sm">About</p>
                 </div>
-              </Link>
+              </A>
               <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
@@ -180,7 +180,7 @@ const Nav = () => {
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="eventslider"
+                to="team"
                 className="hidden  lg:flex cursor-pointer w-[60px] h-[60px] items-center justify-center"
                 onClick={handleMove}
               >

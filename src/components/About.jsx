@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section className="section  xl:min-h-[90vh]" id="about">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col gap-y-20 lg:flex-row justify-between items-start">
           <RevealRight>
             <div id="about1">
               <h2 className="h2 text-accent mb-6">About Constelle</h2>
@@ -39,13 +39,13 @@ const About = () => {
                 non-Technical Events on a breeze of Euphoria with a footfall of
                 thousands.
               </p>
-              <a
+              {/* <a
                 href="https://jntugv.edu.in/"
                 target="_blank_"
                 className="btn btn-sm my-9"
               >
                 About College
-              </a>
+              </a> */}
             </div>
           </RevealRight>
           <RevealLeft>

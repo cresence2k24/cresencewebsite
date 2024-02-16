@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { Reveal } from "../components/Reveal";
 function Contact() {
   const [inputValues, setInputValues] = useState({
     Name: "",
@@ -87,6 +88,7 @@ function Contact() {
   };
   return (
     <div className="container mx-auto p-6 ">
+      <Reveal>
       <Toaster />
       <h1 className="text-3xl font-bold mb-6 text-center text-gradient">
         Contact Us
@@ -164,6 +166,7 @@ function Contact() {
           </button>
         </div>
       </form>
+      </Reveal>
     </div>
   );
 }
