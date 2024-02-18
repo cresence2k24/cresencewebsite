@@ -106,14 +106,14 @@ export const teamData = [
   {
     id: 12,
     image: VenkateshSir,
-    name: "N Venkatesh",
+    name: "Sir N.Venkatesh",
     role: "Faculty Coordinator",
     
   },
   {
     id: 13,
     image: AmardeepSir,
-    name: "Yerra V Amardeep",
+    name: "Sir Y.V.Amardeep",
     role: "Faculty Coordinator",
    
   },
