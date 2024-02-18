@@ -14,7 +14,7 @@ const WorkshopCard = () => {
                 >
                   <div className="bg-black/70 w-full h-full absolute z-40"></div>
                   <img
-                    className="scale-125"
+                    className="scale-125 h-[248px] w-[348px] lg:h-[378px]"
                     src={item.img}
                     alt=""
                   ></img>

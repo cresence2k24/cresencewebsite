@@ -8,6 +8,7 @@ import { MdOutlineEventAvailable } from "react-icons/md";
 import { GiCash } from "react-icons/gi";
 import { Link } from "react-scroll";
 import { Link as A } from "react-router-dom";
+import ScrollToTop from "./Scrolltotop";
 
 const Nav = () => {
   const [more, setMore] = useState(false);
@@ -49,20 +50,20 @@ const Nav = () => {
                   <p className="text-sm">About</p>
                 </div>
               </A>
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="team"
+                to="/team"
                 className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
               >
                 <div className="flex flex-col justify-center items-center ">
                   <RiTeamLine className="text-2xl" />
                   <p className="text-sm">Team</p>
                 </div>
-              </Link>
+              </A>
               <Link
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
@@ -145,13 +146,13 @@ const Nav = () => {
                   <p className="text-sm">More</p>
                 </div>
               </div>
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="eventslider"
+                to="/events"
                 className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
                 onClick={handleMove}
               >
@@ -159,7 +160,7 @@ const Nav = () => {
                   <MdOutlineEventAvailable className="text-2xl" />
                   <p className="text-sm">Events</p>
                 </div>
-              </Link>
+              </A>
 
               <Link
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
@@ -174,13 +175,13 @@ const Nav = () => {
                   <p className="text-sm">Timeline</p>
                 </div>
               </Link>
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="team"
+                to="/team"
                 className="hidden  lg:flex cursor-pointer w-[60px] h-[60px] items-center justify-center"
                 onClick={handleMove}
               >
@@ -188,7 +189,7 @@ const Nav = () => {
                   <RiTeamLine className="text-2xl" />
                   <p className="text-sm">Team</p>
                 </div>
-              </Link>
+              </A>
 
               <Link
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"

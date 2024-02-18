@@ -8,6 +8,8 @@ import NonTechLandingPage from "./pages/NonTechLandingPage";
 import WorkshopLandingPage from "./pages/WorkshopLandingPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+import EventLandingPage from "./pages/EventLandingPage";
+import TeamPage from "./pages/TeamPage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,6 +31,8 @@ const App = () => {
             <Route path="/workshops/:id" element={<EventPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/events" element={<EventLandingPage />} />
+            <Route path="/team" element={<TeamPage />} />
 
             <Route path="*" element={<Notfound />} />
           </Routes>

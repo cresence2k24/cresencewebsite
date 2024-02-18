@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import HomeComp from "../components/HomeComp";
+import HomeComp from "../components/Nav";
 import Reg from "../components/NotFoundComp";
 import Scroll from "../components/Scrolltotop";
 

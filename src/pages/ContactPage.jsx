@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
-import HomeComp from "../components/HomeComp";
+import HomeComp from "../components/Nav";
 import MapEmbed from "../components/mapEmbed";
 
 function ContactPage() {

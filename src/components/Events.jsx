@@ -20,11 +20,9 @@ const Events = (props) => {
                 <p className="text-gradient max-w-sm mb-8">
                   Tech ,Nontech & Cultural
                 </p>
-                <p className="max-w-sm mb-4">
-                  <span className="text-gradient">Premium:</span> Accomodation +
-                  Food (@2days) - 600/-<br></br>
-                  <span className="text-gradient">Normal:</span> Registration +
-                  Food (@2days) - 400/-
+                <p className="max-w-sm mb-4">Entry Fee + Food (@1day) - 200/-<br></br>
+                  Accomodation + Food (@2days) - 400/-<br></br>
+                  Accomodation + Food (@3days) - 500/-
                 </p>
                 <a
                   href="https://forms.gle/EEbmXa2U1yipcgVp7"
