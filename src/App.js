@@ -34,6 +34,8 @@ const App = () => {
             <Route path="/events" element={<EventLandingPage />} />
             <Route path="/team" element={<TeamPage />} />
 
+            
+
             <Route path="*" element={<Notfound />} />
           </Routes>
         </BrowserRouter>
