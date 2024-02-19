@@ -63,6 +63,7 @@ const Events = (props) => {
                 className="flex-1 flex-col lg:w-[565px] lg:h-[490px]"
               >
                 <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[575px]">
+                  
                   <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                   <img
                     className="scale-125 transition-all duration-500 lg:w-[565px]"
