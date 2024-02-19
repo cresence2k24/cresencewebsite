@@ -30,29 +30,28 @@ export default function EventSlider() {
       <div className="container flex flex-col jusify-center items-center gap-y-10 lg:gap-y-5">
         <div className="lg:h-[35] flex flex-col justify-center items-center">
           <Reveal>
-          
-          <div class="lg:flex lg:justify-between lg:w-[80vw] items-center">
-          <div class="lg:flex lg:items-center">
-            <div class="viewall lg:ml-auto invisible">
-                <Link to="/techevents" class="btn btn-sm">
+            <div class="lg:flex lg:justify-between lg:w-[80vw] items-center">
+              <div class="lg:flex lg:items-center">
+                <div class="viewall lg:ml-auto invisible">
+                  <Link to="/techevents" class="btn btn-sm">
                     View all
-                </Link>
-          </div>
-       </div>
-        <div class="w-full lg:w-auto lg:flex lg:items-center justify-center">
-            <p class="text-gradient max-w-sm mb-8 mx-auto lg:mx-0">Tech Events</p>
-        </div>
+                  </Link>
+                </div>
+              </div>
+              <div class="w-full lg:w-auto lg:flex lg:items-center justify-center">
+                <p class="text-gradient max-w-sm mb-8 mx-auto lg:mx-0">
+                  Tech Events
+                </p>
+              </div>
 
-        <div class="hidden lg:flex lg:items-center">
-            <div class="viewall lg:ml-auto">
-                <Link to="/techevents" class="btn btn-sm">
+              <div class="hidden lg:flex lg:items-center">
+                <div class="viewall lg:ml-auto">
+                  <Link to="/techevents" class="btn btn-sm">
                     View all
-                </Link>
+                  </Link>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-
           </Reveal>
           <div className="lg:h-[35]">
             <Swiper
@@ -195,50 +194,46 @@ export default function EventSlider() {
               </SwiperSlide>
             </Swiper>
             <div className="co flex justify-center">
-            <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
-              <div className="swiper-buton-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
-                <FaArrowLeftLong />
+              <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
+                <div className="swiper-buton-prev slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+                  <FaArrowLeftLong />
+                </div>
+                <div className="swiper-buton-next slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+                  <FaArrowRightLong />
+                </div>
               </div>
-              <div className="swiper-buton-next slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
-                <FaArrowRightLong />
+              <div className="viewall lg:hidden">
+                <Link to="/techevents" className="btn btn-sm">
+                  View all
+                </Link>
               </div>
-            </div>
-            <div className="viewall lg:hidden">
-              <Link
-                to="/techevents"
-                className="btn btn-sm"
-              >
-                View all
-              </Link>
-            </div>
             </div>
           </div>
         </div>
         <div className="lg:h-[35] flex flex-col justify-center items-center">
-        <Reveal>
-          
-          <div class="lg:flex lg:justify-between lg:w-[80vw] items-center">
-          <div class="lg:flex lg:items-center">
-            <div class="viewall lg:ml-auto invisible">
-                <Link to="/nontechevents" class="btn btn-sm">
+          <Reveal>
+            <div class="lg:flex lg:justify-between lg:w-[80vw] items-center">
+              <div class="lg:flex lg:items-center">
+                <div class="viewall lg:ml-auto invisible">
+                  <Link to="/nontechevents" class="btn btn-sm">
                     View all
-                </Link>
-          </div>
-       </div>
-        <div class="w-full lg:w-auto lg:flex lg:items-center justify-center">
-            <p class="text-gradient max-w-sm mb-8 mx-auto lg:mx-0">Non-Tech Events</p>
-        </div>
+                  </Link>
+                </div>
+              </div>
+              <div class="w-full lg:w-auto lg:flex lg:items-center justify-center">
+                <p class="text-gradient max-w-sm mb-8 mx-auto lg:mx-0">
+                  Non-Tech Events
+                </p>
+              </div>
 
-        <div class="hidden lg:flex lg:items-center">
-            <div class="viewall lg:ml-auto">
-                <Link to="/nontechevents" class="btn btn-sm">
+              <div class="hidden lg:flex lg:items-center">
+                <div class="viewall lg:ml-auto">
+                  <Link to="/nontechevents" class="btn btn-sm">
                     View all
-                </Link>
+                  </Link>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-
           </Reveal>
           <div className="lg:h-[35]">
             <Swiper
@@ -380,7 +375,7 @@ export default function EventSlider() {
               </SwiperSlide>
               <SwiperSlide>
                 <Link
-                  to="/"
+                  to="/events/Free-Fire"
                   className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]"
                 >
                   <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -399,7 +394,7 @@ export default function EventSlider() {
               </SwiperSlide>
               <SwiperSlide>
                 <Link
-                  to="/"
+                  to="/events/BGMI"
                   className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]"
                 >
                   <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -418,22 +413,19 @@ export default function EventSlider() {
               </SwiperSlide>
             </Swiper>
             <div className="co flex justify-center">
-            <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
-              <div className="swiper-buton-p slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
-                <FaArrowLeftLong />
+              <div className="slider-controller hidden lg:flex lg:gap-x-10 justify-center">
+                <div className="swiper-buton-p slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+                  <FaArrowLeftLong />
+                </div>
+                <div className="swiper-buton-n slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
+                  <FaArrowRightLong />
+                </div>
               </div>
-              <div className="swiper-buton-n slider-arrow btn w-9 h-9 mb-[35px] flex justify-center items-center">
-                <FaArrowRightLong />
+              <div className="viewall lg:hidden">
+                <Link to="/nontechevents" className="btn btn-sm">
+                  View all
+                </Link>
               </div>
-            </div>
-            <div className="viewall lg:hidden">
-              <Link
-                to="/nontechevents"
-                className="btn btn-sm"
-              >
-                View all
-              </Link>
-            </div>
             </div>
           </div>
         </div>

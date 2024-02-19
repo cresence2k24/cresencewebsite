@@ -7,11 +7,12 @@ import { IoInformationCircleOutline, IoTimerOutline } from "react-icons/io5";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { GiCash } from "react-icons/gi";
 import { Link } from "react-scroll";
-import { Link as A } from "react-router-dom";
+import { Link as A, useLocation } from "react-router-dom";
 import ScrollToTop from "./Scrolltotop";
 
 const Nav = () => {
   const [more, setMore] = useState(false);
+  const location = useLocation().pathname.split("/").at(-1);
   const handleMove = () => {
     setMore(false);
   };
@@ -37,13 +38,16 @@ const Nav = () => {
               } flex md:hidden transition-all duration-300`}
             >
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 spy={true}
                 smooth={true}
                 offset={-10}
                 duration={500}
                 to="/about"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === "/about"
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
               >
                 <div className="flex flex-col justify-center items-center ">
                   <IoInformationCircleOutline className="text-2xl" />
