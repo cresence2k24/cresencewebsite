@@ -9,6 +9,8 @@ import hunt from "../Images/huntthehint.avif";
 import ipl from "../Images/ipl.avif";
 import moive from "../Images/moviemad.avif";
 import makefamous from "../Images/MakeMeFamous.jpg";
+import freefire from "../Images/freefire.jpg";
+import bgmi from "../Images/bgmi.avif";
 
 const eventsData = [
   {
@@ -276,6 +278,46 @@ const eventsData = [
     registration_link: "https://forms.gle/4WmkrKRYnP5vDg1Y9",
     learn_more:
       "https://docs.google.com/document/d/1siGVvovuC3V0OTU3cLnmU1FuZ-z_LSZA/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
+  },
+  {
+    id: "Free-Fire",
+    type: "Non-Tech",
+    title: "Free Fire",
+    entry_fee: "200 Rs per Team",
+    rules: [
+      "Each team must consist of a maximum of 4 members.",
+      "All participants must register before the game starts.",
+      "Any misconduct or cheating will result in immediate disqualification",
+      "The game is conducted in online Medium",
+    ],
+    description:
+      "Free Fire is a highly popular mobile battle royale game. In this fast-paced game, 50 players parachute onto an island, scavenge for weapons, and fight to be the last person or team standing as the playable area shrinks over time. The game boasts diverse characters with unique abilities, various play modes, and vibrant graphics, making it a favorite among players globally.",
+    cash_prize: "1000 INR",
+    img: freefire,
+    team: "Squad",
+    registration_link: "https://forms.gle/gjKDhpt14AT5iPBRA",
+    learn_more:
+      "https://docs.google.com/document/d/1Rs5bvoFP8_zjyiHwt15wd7HrxmlhfOog/edit?usp=sharing&ouid=101073225983821030145&rtpof=true&sd=true",
+  },
+  {
+    id: "BGMI",
+    type: "Non-Tech",
+    title: "BGMI",
+    entry_fee: "200 Rs per Team",
+    rules: [
+      "Each team must consist of a maximum of 4 members.",
+      "All participants must register before the game starts.",
+      "Any misconduct or cheating will result in immediate disqualification",
+      "The game is conducted in online Medium",
+    ],
+    description:
+      "BGMI is a highly popular mobile battle royale game. In this fast-paced game, 100 players parachute onto an island, scavenge for weapons, and fight to be the last person or team standing as the playable area shrinks over time. The game boasts diverse characters with unique abilities, various play modes, and vibrant graphics, making it a favorite among players globally.",
+    cash_prize: "3000 /-",
+    img: bgmi,
+    team: "Squad",
+    registration_link: "https://forms.gle/pkF8qzHujPAXdR4i9",
+    learn_more:
+      "https://drive.google.com/file/d/1s2VkrIFgrbBJoQJcVrMoyH3k5Yd1aFD6/view?usp=sharing",
   },
 ];
 
