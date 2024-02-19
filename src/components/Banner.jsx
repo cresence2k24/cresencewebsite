@@ -47,7 +47,7 @@ const Banner = () => {
               </div>
             </RevealLeft>
             <p id="title3" className="mb-8 max-w-lg mx-auto lg:mx-0">
-              Unleashing Talents . Unleash your inner Talents
+              Unleashing Talents.
             </p>
             <div
               id="title4"
