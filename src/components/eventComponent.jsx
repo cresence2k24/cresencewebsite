@@ -24,7 +24,7 @@ const EventComp = () => {
 
   return (
     <Reveal>
-      <div class="px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start">
+      <div class="px-4 lg:px-16 lg:pt-5 flex flex-col justify-center items-center lg:flex-row lg:items-start mb-10 lg:mb-20">
         <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
           <h1 class="text-gradient text-center text-4xl font-bold mb-4">
             {item.title}
