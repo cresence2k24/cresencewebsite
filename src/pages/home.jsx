@@ -18,7 +18,7 @@ const App = () => {
         <Banner />
       </div>
       <Nav />
-      <div className="lg:bg-site lg:bg-local overflow-hidden lg:bg-no-repeat ">
+      <div className="lg:bg-site lg:bg-fixed overflow-hidden lg:bg-no-repeat ">
         <About />
         <Events />
         <EventSlider />
