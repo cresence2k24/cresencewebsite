@@ -4,12 +4,12 @@ import HomeComp from "../components/Nav";
 import Reg from "../components/NotFoundComp";
 import Scroll from "../components/Scrolltotop";
 
-const Notfound = () => {
+const Notfound = (props) => {
   return (
     <div className="h-dvh bg-site to-100% flex flex-col gap-y-0">
       <Header />
       <Scroll />
-      <Reg />
+      <Reg Title={props.Title} text={props.text} />
       <HomeComp />
     </div>
   );

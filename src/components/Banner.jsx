@@ -2,7 +2,7 @@ import React from "react";
 
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
-import { Link as LK } from "react-router-dom";
+import { Link as A } from "react-router-dom";
 import { RevealLeft, RevealRight } from "./Reveal";
 
 const Banner = () => {
@@ -60,13 +60,13 @@ const Banner = () => {
               >
                 Go to Events
               </Link>
-              <LK
+              <A
                 className="text-gradient btn-link drop-shadow-xl cursor-pointer"
                 to="/contact"
                 smooth={true}
               >
                 Contact Us
-              </LK>
+              </A>
             </div>
           </div>
         </div>

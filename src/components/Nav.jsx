@@ -6,7 +6,6 @@ import { CiCircleMore } from "react-icons/ci";
 import { IoInformationCircleOutline, IoTimerOutline } from "react-icons/io5";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { GiCash } from "react-icons/gi";
-import { Link } from "react-scroll";
 import { Link as A, useLocation } from "react-router-dom";
 
 const Nav = () => {
@@ -72,8 +71,8 @@ const Nav = () => {
                   <p className="text-sm">Team</p>
                 </div>
               </A>
-              <Link
-                to="timeline"
+              <A
+                to="/timeline"
                 className={`${
                   location === link.at(4).href
                     ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
@@ -84,21 +83,7 @@ const Nav = () => {
                   <IoTimerOutline />
                   <p className="text-sm">Timeline</p>
                 </div>
-              </Link>
-              <Link
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
-                to="eventslider"
-                className="hidden  lg:flex cursor-pointer w-[60px] h-[60px] items-center justify-center"
-              >
-                <div className="flex flex-col justify-center items-center ">
-                  <RiTeamLine className="text-2xl" />
-                  <p className="text-sm">Team</p>
-                </div>
-              </Link>
+              </A>
             </div>
             <div className="flex">
               <A
@@ -173,8 +158,8 @@ const Nav = () => {
                 </div>
               </A>
 
-              <Link
-                to="timeline"
+              <A
+                to="/timeline"
                 className={`${
                   location === link.at(4).href
                     ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
@@ -186,7 +171,7 @@ const Nav = () => {
                   <IoTimerOutline />
                   <p className="text-sm">Timeline</p>
                 </div>
-              </Link>
+              </A>
               <A
                 to="/team"
                 className={`${
@@ -202,8 +187,8 @@ const Nav = () => {
                 </div>
               </A>
 
-              <Link
-                to="sponsors"
+              <A
+                to="/sponsors"
                 className={`${
                   location === link.at(6).href
                     ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
@@ -215,7 +200,7 @@ const Nav = () => {
                   <GiCash className="text-2xl" />
                   <p className="text-sm">Sponsors</p>
                 </div>
-              </Link>
+              </A>
             </div>
           </div>
         </div>

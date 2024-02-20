@@ -101,22 +101,17 @@ export const teamData = [
     image: ArunaKumariMam,
     name: "Dr.P.Aruna Kumari",
     role: "Faculty Coordinator",
-    
   },
   {
     id: 12,
     image: VenkateshSir,
-    name: "Sir N.Venkatesh",
+    name: "Sri N.Venkatesh",
     role: "Faculty Coordinator",
-    
   },
   {
     id: 13,
     image: AmardeepSir,
-    name: "Sir Y.V.Amardeep",
+    name: "Sri Y.V.Amardeep",
     role: "Faculty Coordinator",
-   
   },
-
-  
 ];
