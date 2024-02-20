@@ -8,11 +8,20 @@ import { MdOutlineEventAvailable } from "react-icons/md";
 import { GiCash } from "react-icons/gi";
 import { Link } from "react-scroll";
 import { Link as A, useLocation } from "react-router-dom";
-import ScrollToTop from "./Scrolltotop";
 
 const Nav = () => {
   const [more, setMore] = useState(false);
-  const location = useLocation().pathname.split("/").at(-1);
+  const location = useLocation().pathname;
+  const link = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Workshops", href: "/workshops" },
+    { name: "Events", href: "/events" },
+    { name: "Timeline", href: "/timeline" },
+    { name: "Team", href: "/team" },
+    { name: "Sponsors", href: "/sponsors" },
+  ];
+
   const handleMove = () => {
     setMore(false);
   };
@@ -38,13 +47,9 @@ const Nav = () => {
               } flex md:hidden transition-all duration-300`}
             >
               <A
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
                 to="/about"
                 className={`${
-                  location === "/about"
+                  location === link.at(1).href
                     ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                     : ""
                 } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
@@ -55,13 +60,12 @@ const Nav = () => {
                 </div>
               </A>
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
                 to="/team"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === link.at(5).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
               >
                 <div className="flex flex-col justify-center items-center ">
                   <RiTeamLine className="text-2xl" />
@@ -69,11 +73,12 @@ const Nav = () => {
                 </div>
               </A>
               <Link
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
                 to="timeline"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === link.at(4).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
               >
                 <div className="flex flex-col justify-center items-center">
                   <IoTimerOutline />
@@ -97,13 +102,12 @@ const Nav = () => {
             </div>
             <div className="flex">
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-300}
-                duration={500}
-                to="/"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                to={"/"}
+                className={`${
+                  location === link.at(0).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -112,13 +116,12 @@ const Nav = () => {
                 </div>
               </A>
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
                 to="/about"
-                className="hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center"
+                className={`${
+                  location === link.at(1).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -127,13 +130,12 @@ const Nav = () => {
                 </div>
               </A>
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
                 to="/workshops"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === link.at(2).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -145,19 +147,24 @@ const Nav = () => {
                 onClick={handleClick}
                 className="lg:hidden cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
               >
-                <div className="flex flex-col justify-center items-center ">
+                <div
+                  className={`${
+                    more
+                      ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                      : ""
+                  } cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center`}
+                >
                   <CiCircleMore className="text-2xl" />
                   <p className="text-sm">More</p>
                 </div>
               </div>
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
                 to="/events"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === link.at(3).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -167,11 +174,12 @@ const Nav = () => {
               </A>
 
               <Link
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
                 to="timeline"
-                className="hidden lg:flex cursor-pointer w-[60px] h-[60px]  items-center justify-center"
+                className={`${
+                  location === link.at(4).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center">
@@ -180,13 +188,12 @@ const Nav = () => {
                 </div>
               </Link>
               <A
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
                 to="/team"
-                className="hidden  lg:flex cursor-pointer w-[60px] h-[60px] items-center justify-center"
+                className={`${
+                  location === link.at(5).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } hidden cursor-pointer w-[60px] h-[60px] lg:flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
@@ -196,13 +203,12 @@ const Nav = () => {
               </A>
 
               <Link
-                activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
-                smooth={true}
-                spy={true}
-                offset={-30}
-                duration={500}
                 to="sponsors"
-                className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+                className={`${
+                  location === link.at(6).href
+                    ? "text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
+                    : ""
+                } cursor-pointer w-[60px] h-[60px] flex items-center justify-center`}
                 onClick={handleMove}
               >
                 <div className="flex flex-col justify-center items-center ">
