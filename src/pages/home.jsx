@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import About from "../components/About";
 import Events from "../components/Events";
 import Team from "../components/Team";
-// import Sponsors from '../components/SponsorComp';
+import Sponsors from '../components/SponsorComp';
 import Footer from "../components/footer";
 import EventSlider from "../components/Eventslider";
 
@@ -23,7 +23,7 @@ const App = () => {
         <Events />
         <EventSlider />
         <Team />
-        {/* <Sponsors /> */}
+        <Sponsors />
         <Footer />
       </div>
     </div>

@@ -100,7 +100,7 @@ export const teamData = [
     id: 11,
     image: ArunaKumariMam,
     name: "Dr.P.Aruna Kumari",
-    role: "Faculty Coordinator",
+    role: "Head of the Department",
   },
   {
     id: 12,
