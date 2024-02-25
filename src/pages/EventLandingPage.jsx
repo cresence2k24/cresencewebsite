@@ -11,12 +11,16 @@ const EventLandingPage = () => {
       <div className="bg-site bg-no-repeat bg-fixed overflow-hidden min-h-[100vh] pb-20 lg:pb-5">
         <Header />
         <div className="h2 text-center text-gradient">
-            <h1>
-              Our events
-            </h1>
+          <h1>Technical Events</h1>
         </div>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:mt-10">
-          <EventCard/>
+          <EventCard type="tech" />
+        </div>
+        <div className="h2 text-center text-gradient">
+          <h1>Non-Technical Events</h1>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:mt-10">
+          <EventCard type="Non-Tech" />
         </div>
         <HomeComp />
       </div>

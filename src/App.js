@@ -34,10 +34,30 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/events" element={<EventLandingPage />} />
             <Route path="/team" element={<TeamPage />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            
-
-            <Route path="*" element={<Notfound />} />
+            <Route
+              path="/timeline"
+              element={
+                <Notfound
+                  Title={["Coming", "Soon..."]}
+                  text="Go back to home"
+                />
+              }
+            />
+            <Route
+              path="/sponsors"
+              element={
+                <Sponsors/>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <Notfound
+                  Title={["Page", "Not Found"]}
+                  text="Seems like you are lost? Go back to home"
+                />
+              }
+            />
           </Routes>
         </BrowserRouter>
       </div>

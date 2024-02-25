@@ -21,36 +21,25 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-/* .btn:hover { */
-/* transition: all; */
-/* background: linear-gradient( */
-/* 92.23deg, */
-/* 100deg, */
-/* #406aff 21.43%, */
-/* #3bace2 50.63%, */
-/* #b936ee 100%, */
-/* #ff56f6 117.04% */
-/* ); */
-/* animation: gradient 15s ease infinite; */
-/* transform: translateY(20px); */
-/* transition-timing-function: ease-out; */
-/* transition-duration: 1s; */
-/* transition-property: translateY(10px); */
-/* box-shadow: 0px 4.42184px 107.23px black; */
-/* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px; */
-/* } */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-/* @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
+/* Track */
+::-webkit-scrollbar-track {
+  background: #220d3d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #501d93;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .gradient,
 .active {
