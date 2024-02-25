@@ -11,7 +11,7 @@ import {
     LinkedInLogoIcon,
   } from "@radix-ui/react-icons";
   import { Reveal } from "./Reveal";
-  import PennantLogo from "../assets/Images/pennant.png"; 
+  import PennantLogo from "../assets/Images/pennant.webp"; 
   
   const LOGOS = [
     <img src={PennantLogo} className="w-[200px] h-[70px]" />,
