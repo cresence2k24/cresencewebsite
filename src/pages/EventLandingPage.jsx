@@ -15,7 +15,7 @@ const EventLandingPage = () => {
               Our events
             </h1>
         </div>
-        <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center lg:mt-10">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:mt-10">
           <EventCard/>
         </div>
         <HomeComp />

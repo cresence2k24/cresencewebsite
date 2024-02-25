@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import EventLandingPage from "./pages/EventLandingPage";
 import TeamPage from "./pages/TeamPage";
+import Sponsors from "./pages/SponsorsPage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,7 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/events" element={<EventLandingPage />} />
             <Route path="/team" element={<TeamPage />} />
-
+            <Route path="/sponsors" element={<Sponsors />} />
             
 
             <Route path="*" element={<Notfound />} />

@@ -195,13 +195,13 @@ const Nav = () => {
                 </div>
               </A>
 
-              <Link
+              <A
                 activeClass="text-white underline underline-offset-8 decoration-blue-500 decoration-[3px]"
                 smooth={true}
                 spy={true}
                 offset={-30}
                 duration={500}
-                to="sponsors"
+                to="/sponsors"
                 className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
                 onClick={handleMove}
               >
@@ -209,7 +209,7 @@ const Nav = () => {
                   <GiCash className="text-2xl" />
                   <p className="text-sm">Sponsors</p>
                 </div>
-              </Link>
+              </A>
             </div>
           </div>
         </div>
