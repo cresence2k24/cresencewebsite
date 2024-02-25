@@ -1,9 +1,9 @@
 import React from 'react';
-import Multikitchen from "../assets/Images/multikitchen.jpeg";
-import platform65 from "../assets/Images/plat65.png";
-import shalimar from "../assets/Images/shalimar.png";
-import pennant from "../assets/Images/pennant.png";
-import sukras from "../assets/Images/sukras.jpeg";
+import Multikitchen from "../assets/Images/multikitchen.webp";
+import platform65 from "../assets/Images/plat65.webp";
+import shalimar from "../assets/Images/shalimar.webp";
+import pennant from "../assets/Images/pennant.webp";
+import sukras from "../assets/Images/sukras.webp";
 const Sponsors = () => {
   return (
     <div className='section overflow-hidden'>
