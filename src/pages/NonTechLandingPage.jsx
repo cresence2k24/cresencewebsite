@@ -13,6 +13,7 @@ const EventLandingPage = () => {
         <div className="h2 text-center text-gradient">
             <h1>
               Non-Tech events
+              
             </h1>
         </div>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:mt-10">
