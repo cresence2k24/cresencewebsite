@@ -27,13 +27,14 @@ module.exports = {
         hero: "url('./assets/Images/hero-banner.jpg')",
       },
       animation: {
-        ["infinite-slider"]: "infiniteSlider 16s linear infinite",
+        ["infinite-slider"]: "infiniteSlider 10s linear infinite",
       },
       keyframes: {
         infiniteSlider: {
-          from: { transform: "translateX(0)" },
-          to: {
-            transform: "translateX(calc(-250px * 4))",
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            // -250px * 4
+            transform: "translateX(calc(-45%))",
           },
         },
       }
