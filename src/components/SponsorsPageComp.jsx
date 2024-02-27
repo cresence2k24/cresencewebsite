@@ -10,7 +10,7 @@ import rkacademy from "../assets/Images/rkacademy.webp";
 import kritunga from "../assets/Images/kritunga.webp";
 import hayat from "../assets/Images/hayat.webp";
 import foodclock from "../assets/Images/foodclock.webp";
-
+import dhanvanth from "../assets/Images/dhanvanth.webp";
 
 const Sponsors = () => {
   return (
@@ -59,12 +59,16 @@ const Sponsors = () => {
               <img src={ssk} alt="ssk"/>
             </div>
 
-            <div class="overflow-hidden rounded-2xl h-[250px] w-[250px] lg:h-[200px] lg:w-[200px] flex items-center justify-center">
+            <div class="overflow-hidden rounded-2xl h-[180px] w-[180px] lg:h-[180px] lg:w-[180px] flex items-center justify-center">
               <img src={rkacademy} alt="rkacademy" />
             </div>
 
             <div class="overflow-hidden rounded-2xl h-[200px] w-[200px] lg:h-[150px] lg:w-[150px] flex items-center justify-center">
               <img src={kritunga} alt="kritunga" />
+            </div>
+
+            <div class="overflow-hidden rounded-2xl h-[170px] w-[200px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
+              <img src={dhanvanth} alt="dhanvanth" />
             </div>
 
             <div class="overflow-hidden rounded-2xl h-[150px] w-[220px] lg:h-[100px] lg:w-[150px] flex items-center justify-center">
