@@ -5,6 +5,8 @@ import shalimar from "../assets/Images/shalimar.webp";
 import pennant from "../assets/Images/pennant.webp";
 import sukras from "../assets/Images/sukras.webp";
 import ssk from "../assets/Images/ssk.webp";
+
+
 const Sponsors = () => {
   return (
     <div className='section overflow-hidden'>
@@ -44,7 +46,7 @@ const Sponsors = () => {
               <img src={sukras} alt="sukras" />
             </div>
 
-            <div className="bg-black overflow-hidden rounded-2xl h-[200px] w-[200px] lg:h-[150px] lg:w-[150px] flex items-center justify-center">
+            <div className="h-[200px] w-[200px] lg:h-[150px] lg:w-[150px] flex items-center justify-center">
               <img src={ssk} alt="ssk"/>
             </div>
 

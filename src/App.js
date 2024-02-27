@@ -11,7 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import EventLandingPage from "./pages/EventLandingPage";
 import TeamPage from "./pages/TeamPage";
 import Sponsors from "./pages/SponsorsPage";
-
+import Time from "./pages/TimelinePage";
 const App = () => {
   const [loading, setLoading] = useState(true);
   const preloader = document.getElementById("preload");
@@ -34,6 +34,7 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/events" element={<EventLandingPage />} />
             <Route path="/team" element={<TeamPage />} />
+            {/* <Route path="/time" element={<Time />}/> */}
             <Route
               path="/timeline"
               element={

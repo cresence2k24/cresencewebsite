@@ -12,7 +12,7 @@
     <img src={platform65} alt="platform65" className="h-[100px] w-[100px] bg-white rounded-lg overflow-hidden"/>,
     <img src={shalimar} alt="shalimar" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
     <img src={sukras} alt="sukras" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
-    <img src={ssk} alt="ssk" className="h-[100px] w-[200px] bg-black rounded-lg overflow-hidden"/>,
+    <img src={ssk} alt="ssk" className="h-[100px] w-[125px] bg-white rounded-lg overflow-hidden"/>,
    
   ];
   
