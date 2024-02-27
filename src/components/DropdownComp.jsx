@@ -10,9 +10,10 @@ export default function Example() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="btn btn-sm inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white px-3 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300">
+        <Menu.Button className="group btn btn-sm inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white px-3 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300">
           Downloads
-          <ChevronDownIcon className="-mr-1 h-5 w-5 text-white" aria-hidden="true" />
+          <ChevronDownIcon className="-mr-1 h-5 w-5 text-white transform group-focus:-rotate-180
+        transition duration-150 ease-in-out" aria-hidden="true" />
         </Menu.Button>
       </div>
 
