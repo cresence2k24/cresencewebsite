@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/Images/logo.webp";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
+import Dropdown from "./DropdownComp";
 
 const Header = () => {
   return (
@@ -11,13 +12,15 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} alt="" className="h-[92px]"></img>
           </Link>
-          <ScrollLink
+          <Dropdown />
+          {/* <ScrollLink
             className="btn btn-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
             to="about"
             smooth={true}
           >
             Explore!
-          </ScrollLink>
+          </ScrollLink> */}
+
         </div>
       </div>
     </header>
