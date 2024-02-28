@@ -12,6 +12,7 @@ import hayat from "../assets/Images/hayat.webp";
 import foodclock from "../assets/Images/foodclock.webp";
 import dhanvanth from "../assets/Images/dhanvanth.webp";
 import fasttrack from "../assets/Images/fasttrack.webp";
+import greentrends from "../assets/Images/greentrends.webp";
 
 const Sponsors = () => {
   return (
@@ -33,7 +34,7 @@ const Sponsors = () => {
               <img src={pennant} alt="pennant"/>
             </div>
 
-            <div class="overflow-hidden rounded-2xl h-[170px] w-[200px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
+            <div class="overflow-hidden rounded-2xl h-[180px] w-[250px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
               <img src={svs} alt="svsevents" />
             </div>
 
@@ -52,7 +53,7 @@ const Sponsors = () => {
             </div>
 
 
-            <div class="overflow-hidden rounded-2xl h-[200px] w-[200px] lg:h-[150px] lg:w-[150px] flex items-center justify-center">
+            <div class="overflow-hidden rounded-lg h-[74px] w-[250px] lg:h-[74px] lg:w-[250px] flex items-center justify-center">
               <img src={sukras} alt="sukras" />
             </div>
 
@@ -82,6 +83,10 @@ const Sponsors = () => {
 
             <div className='overflow-hidden rounded-lg h-[74px] w-[250px] flex items-center justify-center'>
               <img src={fasttrack} alt="fasttrack" />
+            </div>
+
+            <div className='overflow-hidden rounded-[20px] h-[74px] w-[250px] flex items-center justify-center'>
+              <img src={greentrends} alt="greentrends" />
             </div>
 
             
