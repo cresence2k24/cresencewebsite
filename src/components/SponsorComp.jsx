@@ -13,6 +13,8 @@
   import dhanvanth from "../assets/Images/dhanvanth.webp";
   import fasttrack from "../assets/Images/fasttrack.webp";
   import greentrends from "../assets/Images/greentrends.webp";
+  import kingdom from "../assets/Images/kingdom.webp";
+  import battula from "../assets/Images/battulaprakash.webp";
 
   const LOGOS = [
     <img src={pennant} alt="pennant" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
@@ -29,6 +31,8 @@
     <img src={dhanvanth} alt="dhanvanth" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
     <img src={fasttrack} alt="fasttrack" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
     <img src={greentrends} alt="greentrends" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
+    <img src={battula} alt="battulaPrakash" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
+    <img src={kingdom} alt="kingdom" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
    
   ];
   
@@ -40,7 +44,7 @@ const SponsorComp = () => {
             </Reveal>
       <div className="bg-transparent relative w-[100%] my-0 h-[100px] overflow-hidden flex justify-center items-center">
         
-        <div className="animate-infinite-slider flex gap-10 justify-center items-center w-[calc(250px*20)] lg:w-[calc(250px*22)]">
+        <div className="animate-infinite-slider flex gap-10 justify-center items-center w-[calc(250px*24)]">
           {LOGOS.map((logo, index) => (
             <div
               className="slide flex w-[200px] items-center justify-center bg-white rounded-lg overflow-hidden"

@@ -13,6 +13,9 @@ import foodclock from "../assets/Images/foodclock.webp";
 import dhanvanth from "../assets/Images/dhanvanth.webp";
 import fasttrack from "../assets/Images/fasttrack.webp";
 import greentrends from "../assets/Images/greentrends.webp";
+import kingdom from "../assets/Images/kingdom.webp";
+import battula from "../assets/Images/battulaprakash.webp";
+
 
 const Sponsors = () => {
   return (
@@ -34,7 +37,7 @@ const Sponsors = () => {
               <img src={pennant} alt="pennant"/>
             </div>
 
-            <div class="overflow-hidden rounded-2xl h-[180px] w-[250px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
+            <div class="overflow-hidden rounded-2xl h-[200px] w-[250px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
               <img src={svs} alt="svsevents" />
             </div>
 
@@ -52,9 +55,16 @@ const Sponsors = () => {
               <img src={shalimar} alt="shalimar" />
             </div>
 
+            <div class="overflow-hidden rounded-xl h-[150px] w-[200px] lg:h-[120px] lg:w-[150px] flex items-center justify-center">
+              <img src={kingdom} alt="kingdom" />
+            </div>
 
             <div class="overflow-hidden rounded-lg h-[74px] w-[250px] lg:h-[74px] lg:w-[250px] flex items-center justify-center">
               <img src={sukras} alt="sukras" />
+            </div>
+
+            <div className='overflow-hidden rounded-xl h-[65px] w-[250px] flex items-center justify-center'>
+              <img src={battula} alt="battula" />
             </div>
 
             <div className="h-[200px] w-[200px] lg:h-[180px] lg:w-[180px] flex items-center justify-center">
