@@ -56,7 +56,7 @@ const YourComponent = () => {
               <time>9:00AM to 11:30AM</time>
               <div className="discovery">
                 <h1 className='text-[30px]'>Inauguration</h1>
-                <p className='text-2xl'>(auditorium)</p>
+                {/* <p className='text-2xl'>(auditorium)</p> */}
               </div>
             </div>
           </li>
@@ -65,7 +65,7 @@ const YourComponent = () => {
               <time>11:30AM to 1:00PM</time>
               <div className="discovery">
                 <h1 className='text-[30px]'>Code Quest</h1>
-                <p className='text-2xl'>(Computer Lab)</p>
+                {/* <p className='text-2xl'>(Computer Lab)</p> */}
               </div>
             </div>
           </li>
@@ -74,7 +74,7 @@ const YourComponent = () => {
               <time>12:00PM to 1:00PM</time>
               <div className="discovery">
                 <h1 className='text-[30px]'>Movie Madness</h1>
-                <p className='text-2xl'>(LH-30)</p>
+                {/* <p className='text-2xl'>(LH-30)</p> */}
               </div>
             </div>
           </li>
@@ -83,7 +83,7 @@ const YourComponent = () => {
               <time>12:30PM to 2:00PM</time>
               <div class="discovery">
                 <h1 className='text-[30px]'>FOOD</h1>
-                <p className='text-2xl'>(AB-2)</p>
+                {/* <p className='text-2xl'>(AB-2)</p> */}
               </div>
             </div>
           </li>
@@ -93,7 +93,7 @@ const YourComponent = () => {
               <time>2:00PM to 2:30PM</time>
               <div class="discovery">
                 <h1 className='text-[30px]'>Type Sprint</h1>
-                <p className='text-2xl'>(CSE LAB)</p>
+                {/* <p className='text-2xl'>(CSE LAB)</p> */}
               </div>
             </div>
           </li>
@@ -102,7 +102,7 @@ const YourComponent = () => {
               <time>2:30PM to 4:30PM</time>
               <div class="discovery">
                 <h1 className='text-[30px]'>IPL Auction</h1>
-                <p className='text-2xl'>(LH-30)</p>
+                {/* <p className='text-2xl'>(LH-30)</p> */}
               </div>
             </div>
           </li>
@@ -111,7 +111,7 @@ const YourComponent = () => {
               <time>4:30PM to 5:30PM</time>
               <div class="discovery">
                 <h1 className='text-[30px]'>Get Grab Gather</h1>
-                <p className='text-2xl'>(AB-2)</p>
+                {/* <p className='text-2xl'>(AB-2)</p> */}
               </div>
             </div>
           </li>
@@ -120,7 +120,7 @@ const YourComponent = () => {
               <time>5:30PM to 9:00PM</time>
               <div class="discovery">
                 <h1 className='text-[30px]'>Culturals</h1>
-                <p className='text-2xl'>(Ground)</p>
+                {/* <p className='text-2xl'>(Ground)</p> */}
               </div>
             </div>
           </li>
@@ -134,7 +134,7 @@ const YourComponent = () => {
               <time>9:00AM to 11:00AM</time>
               <div className="discovery">
                 <h1 className='text-[30px]'>Ex-Quiz-Me</h1>
-                <p className='text-2xl'>(LH-30)</p>
+                {/* <p className='text-2xl'>(LH-30)</p> */}
               </div>
             </div>
           </li>
@@ -144,7 +144,7 @@ const YourComponent = () => {
             <time>10:00AM to 11:00AM</time>
             <div class="discovery">
               <h1 className='text-[30px]'>Logic League</h1>
-              <p className='text-2xl'>(CSE LAB)</p>
+              {/* <p className='text-2xl'>(CSE LAB)</p> */}
             </div>
           </div>
         </li>
@@ -153,7 +153,7 @@ const YourComponent = () => {
             <time>11:00AM to 12:30PM</time>
             <div class="discovery">
               <h1 className='text-[30px]'>Cipher Chase</h1>
-              <p className='text-2xl'>(CSE LAB)</p>
+              {/* <p className='text-2xl'>(CSE LAB)</p> */}
             </div>
           </div>
         </li>
@@ -162,7 +162,7 @@ const YourComponent = () => {
             <time>12:30PM to 2:00PM</time>
             <div class="discovery">
               <h1 className='text-[30px]'>FOOD</h1>
-              <p className='text-2xl'>(AB-2)</p>
+              {/* <p className='text-2xl'>(AB-2)</p> */}
             </div>
           </div>
         </li>
@@ -172,7 +172,7 @@ const YourComponent = () => {
             <time>2:00PM to 3:00PM</time>
             <div class="discovery">
               <h1 className='text-[30px]'>Crypto Venture</h1>
-              <p className='text-2xl'>(CSE LAB)</p>
+              {/* <p className='text-2xl'>(CSE LAB)</p> */}
             </div>
           </div>
         </li>

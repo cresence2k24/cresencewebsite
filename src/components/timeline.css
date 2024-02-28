@@ -114,7 +114,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #f1dae6;
+    /* background-color: #fff; */
   }
   
   .timeline ul li div div p, .timeline_2 ul li div div p {
@@ -214,7 +215,7 @@
       margin-left: 20px;
     }
     .timeline ul li div div,.timeline_2 ul li div div{
-      background-color: azure;
+      background-color: #f1dae6;
       width:95%;
     }
     /* distance of div from the time line */
