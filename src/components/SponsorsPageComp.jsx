@@ -11,6 +11,7 @@ import kritunga from "../assets/Images/kritunga.webp";
 import hayat from "../assets/Images/hayat.webp";
 import foodclock from "../assets/Images/foodclock.webp";
 import dhanvanth from "../assets/Images/dhanvanth.webp";
+import fasttrack from "../assets/Images/fasttrack.webp";
 
 const Sponsors = () => {
   return (
@@ -78,6 +79,11 @@ const Sponsors = () => {
             <div class="overflow-hidden rounded-2xl h-[170px] w-[220px] lg:h-[150px] lg:w-[150px] flex items-center justify-center">
               <img src={foodclock} alt="foodOclock" />
             </div>
+
+            <div className='overflow-hidden rounded-lg h-[74px] w-[250px] flex items-center justify-center'>
+              <img src={fasttrack} alt="fasttrack" />
+            </div>
+
             
 
 

@@ -11,6 +11,7 @@
   import hayat from "../assets/Images/hayat.webp";
   import foodclock from "../assets/Images/foodclock.webp";
   import dhanvanth from "../assets/Images/dhanvanth.webp";
+  import fasttrack from "../assets/Images/fasttrack.webp";
 
   const LOGOS = [
     <img src={pennant} alt="pennant" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
@@ -25,7 +26,8 @@
     <img src={foodclock} alt="foodOclock" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
     <img src={hayat} alt="hayat" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
     <img src={dhanvanth} alt="dhanvanth" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
-  
+    <img src={fasttrack} alt="fasttrack" className="h-[100px] w-[200px] bg-white rounded-lg overflow-hidden"/>,
+   
   ];
   
 const SponsorComp = () => {
