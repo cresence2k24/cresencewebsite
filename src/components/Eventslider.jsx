@@ -150,7 +150,7 @@ export default function EventSlider() {
                     <span className="text-gradient">Logic League</span>
                   </div>
                   <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50">
-                    <span className="text-2xl text-white">1st March</span>
+                    <span className="text-2xl text-white">2nd March</span>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -169,7 +169,7 @@ export default function EventSlider() {
                     <span className="text-gradient">Cipher Chase</span>
                   </div>
                   <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50">
-                    <span className="text-2xl text-white">1st March</span>
+                    <span className="text-2xl text-white">2nd March</span>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -188,7 +188,7 @@ export default function EventSlider() {
                     <span className="text-gradient">Crypto-Venture</span>
                   </div>
                   <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50">
-                    <span className="text-2xl text-white">1st March</span>
+                    <span className="text-2xl text-white">2nd March</span>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -293,7 +293,7 @@ export default function EventSlider() {
                     <span className="text-gradient">Hunt the Hint</span>
                   </div>
                   <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50">
-                    <span className="text-2xl text-white">1st March</span>
+                    <span className="text-2xl text-white">2nd March</span>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -312,7 +312,7 @@ export default function EventSlider() {
                     <span className="text-gradient">Ex-Quiz-Me!</span>
                   </div>
                   <div className="absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-50">
-                    <span className="text-2xl text-white">1st March</span>
+                    <span className="text-2xl text-white">2nd March</span>
                   </div>
                 </Link>
               </SwiperSlide>
