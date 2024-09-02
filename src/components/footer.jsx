@@ -24,7 +24,6 @@ const Footer = () => {
             <Reveal>
               <div className="flex flex-col lg:gap-2 pb-20 lg:pb-0 pt-5 lg:pt-0 justify-items-center items-center">
                 <h2 className="text-3xl text-white">Contact Us</h2>
-                <p className="text-gray-300"> +91 6301606734</p>
                 <a
                   href="mailto:cresence@jntugvcev.edu.in"
                   target="blank"
